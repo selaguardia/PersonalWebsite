@@ -5,28 +5,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sergio Laguardia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./public/styles/main.css" />
+    <script src="./public/"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/product/" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
   </head>
   <body>
-    <nav>
-      <h1>NavBar</h1>
-    </nav>
-    <section class="homepage">
-      <h1>Homepage</h1>
-    </section>
-    <section class="aboutMe">
-      <h1>About Me</h1>
-    </section>
-    <section class="projects">
-      <h1>Projects</h1>
-    </section>
-    <section class="skills">
-      <h1>Skills</h1>
-    </section>
-    <section class="contact">
-      <h1>Contact</h1>
-    </section>
-    <footer>
-      <h1>Footer</h1>
-    </footer>
+    <!-- navbar -->
+    <header class="site-header sticky-top py-1 bg-info">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <h5>Sergio.Laguardia</h5>
+          
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler" id="testButton" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="/">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#banquets">Technologies</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#menu">Projects</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="#resume">Resume</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="conainer-fluid">
+
+
+      <!-- Home -->
+        <div class="row">
+          <div class="col bg-info">
+            <div class="card mb-3" >
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./public/images/sergio.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Home</h5>
+                    <p class="card-text">As a software engineer with a degree in business and experience in customer service, I bring my business knowledge and apply it to all of my coding projects. I naturally get excited and passionate about visualizing and creating apps from the ground up and seeing them come to life. I specialize in full-stack JavaScript technologies (MERN stack: MongoDB, Express JS, React JS, Node JS) to build complete web applications with API systems.</p>
+                    <p class="card-text"><small class="text-muted">Last updated Sept. 27, 2021</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+      <!-- Skills  Section -->
+        <div class="row text-center bg-danger py-3">
+          <div class="col">
+            <div class="row p-3">
+              <div class="col display-6">Technologies</div>
+            </div>
+            <div class="row p-3">
+              <div class="col-md-6 col-lg-4 col-xxl-3">
+                <img src="https://img.icons8.com/color/240/000000/html-5--v1.png" alt="HTML5"/>
+                <h4>HTML5</h4>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xxl-3">
+                <img src="https://img.icons8.com/color/240/000000/css3.png" alt="CSS3"/>
+                <h4>CSS</h4>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xxl-3">
+                <img src="https://img.icons8.com/color/240/000000/javascript--v1.png" alt="JavaScript"/>
+                <h4>JavaScript</h4>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xxl-3">
+                <img src="https://img.icons8.com/color/240/000000/nodejs.png" alt="Node.js"/>
+                <h4>Node.js</h4>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xxl-3">
+                <img src="https://img.icons8.com/color/240/000000/python--v2.png" alt="Python3"/>
+                <h4>Python</h4>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xxl-3">
+                <img src="https://img.icons8.com/color/240/000000/django.png" alt="Django"/>
+                <h4>Django</h4>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xxl-3">
+                <img src="https://img.icons8.com/color/240/000000/react-native.png" alt="React"/>
+                <h4>React</h4>
+              </div>
+              <div class="col-md-6 col-lg-4 col-xxl-3">
+                <img src="https://img.icons8.com/color/240/000000/bootstrap.png"/>
+                <h4>Bootstrap</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Projects  Section -->
+      <div class="row text-center">
+        <div class="col bg-success">
+          <div class="row">
+            <div class="col display-6">Projects</div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-lg-6 col-xxl-6">Project 1</div>
+            <div class="col-md-12 col-lg-6 col-xxl-6">Project 2</div>
+            <div class="col-md-12 col-lg-6 col-xxl-6">Project 3</div>
+            <div class="col-md-12 col-lg-6 col-xxl-6">Project 4</div>
+            <div class="col-md-12 col-lg-6 col-xxl-6">Project 5</div>
+            <div class="col-md-12 col-lg-6 col-xxl-6">Project 6</div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Contact -->
+      <div class="row">
+        <div class="col bg-info">
+          Contact Me
+        </div>
+      </div>
+
+      <!-- Resume -->
+      <div class="row">
+        <div class="col bg-info">
+          Resume
+        </div>
+      </div>
+
+      </div>
+    </main>
+      
+    
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>
