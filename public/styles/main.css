@@ -1,12 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bonheur+Royale&display=swap');
+
+/* GREETING: font-family: 'Bad Script', cursive;
+LOGO: font-family: 'Bonheur Royale', cursive; */
 
 /* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color:rgb(13, 197, 254);
+
+}
+
+#logo {
+  font-family: 'Bonheur Royale', cursive;
+  font-size: 3rem;
+  color:blanchedalmond;
+}
+.coverText {
+  font-family: 'Bad Script', cursive;
+  margin-left: 50%;
+
+}
+
+.sectionTitle {
+  font-family: 'Bad Script', cursive;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.navStyle {
+  font-family: 'Bad Script', cursive;
+  font-size: 2rem;
+  margin-right: 5px;
+
+}
+
+.navStyle:hover {
+  border-radius: 7px;
+  background-color: #0f66e9;
+  transform: scale(1.1);
 }
 
 body {
   background-color: rgb(5, 0, 96);
   height: 100vh;
+}
+
+.landing {
+  height: 100vh;
+}
+
+.landing img {
+  width: 100%;
 }
