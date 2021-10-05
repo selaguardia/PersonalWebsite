@@ -15,7 +15,7 @@ LOGO: font-family: 'Bonheur Royale', cursive; */
 #logo {
   font-family: 'Bonheur Royale', cursive;
   font-size: 3rem;
-  color:blanchedalmond;
+  color:rgb(13, 197, 254);
 }
 .coverText {
   font-family: 'Bad Script', cursive;
@@ -36,10 +36,10 @@ LOGO: font-family: 'Bonheur Royale', cursive; */
 
 }
 
-.navStyle:hover {
+.nav-link:hover {
   border-radius: 7px;
-  background-color: #0f66e9;
   transform: scale(1.1);
+  color:rgb(13, 197, 254)!important;
 }
 
 body {
@@ -47,10 +47,9 @@ body {
   height: 100vh;
 }
 
-.landing {
-  height: 100vh;
-}
+
 
 .landing img {
   width: 100%;
 }
+
