@@ -1,55 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bonheur+Royale&display=swap');
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400&family=VT323&display=swap');
 
-/* GREETING: font-family: 'Bad Script', cursive;
-LOGO: font-family: 'Bonheur Royale', cursive; */
+:root {
+  --font-regular:'IBM Plex Mono', monospace;
+  --font-special:'VT323', monospace;
+
+  --bg-primary: #0d3082ff;
+  --bg-secondary: #2784b9ff;
+  --color-primary: rgba(227, 230, 255, 0.968);
+  --color-secondary: #b3a8a8ff;
+  --color-accent:#70ae6eff;
+}
+
 
 /* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color:rgb(13, 197, 254);
-
-}
-
-#logo {
-  font-family: 'Bonheur Royale', cursive;
-  font-size: 3rem;
-  color:rgb(13, 197, 254);
-}
-.coverText {
-  font-family: 'Bad Script', cursive;
-  margin-left: 50%;
-
-}
-
-.sectionTitle {
-  font-family: 'Bad Script', cursive;
-  font-weight: bolder;
-  font-size: 3rem;
-}
-
-.navStyle {
-  font-family: 'Bad Script', cursive;
-  font-size: 2rem;
-  margin-right: 5px;
-
-}
-
-.nav-link:hover {
-  border-radius: 7px;
-  transform: scale(1.1);
-  color:rgb(13, 197, 254)!important;
 }
 
 body {
-  background-color: rgb(5, 0, 96);
-  height: 100vh;
+  background-color: var(--bg-primary);
+  font-family: var(--font-regular);
+}
+
+.logoDiv{
+  font-family: var(--font-special);
+  font-size: 2rem;
+  color: var(--color-accent);
+}
+
+
+.cover-container {
+  background-image: url('../images/keyboard.jpg');
+  background-size: cover;
+}
+
+.coverText {
+  text-align: right!important;
+  min-height:90vh;
+  margin-top: 100px;
+  margin-right: 100px;
+  color:var(--color-primary);
+}
+
+.sectionTitleContainer {
+  background-color:var(--color-secondary);
+  color: black;
+  border-radius: 15px;
+}
+
+#about, #technologies, #projects, #contact {
+  background-color:var(--color-accent);
+  color: black;
+  border-radius: 15px; 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+nav {
+  background-color:var(--bg-primary);
+  color: var(--color-secondary);
+  border-radius: 15px; 
+
+}
+
+.card {
+  color:black;
 }
 
 
 
-.landing img {
-  width: 100%;
+nav{
+  background-color: rgb(7, 125, 189);
 }
 
+.modal-body {
+  text-align: left;
+}
+
+.card-link {
+  text-decoration: none;
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  
+}
+
+.card-link:hover {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color:var(--color-accent);
+
+}
+
+.btn {
+  background-color: var(--bg-secondary);
+}
+
+.btn:hover {
+  background-color: var(--color-accent);
+  font-size:1.3rem;
+}
+
+ul {
+  list-style-type: none;
+}
