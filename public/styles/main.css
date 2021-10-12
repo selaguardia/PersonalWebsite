@@ -59,6 +59,7 @@ body {
   border-radius: 15px; 
   margin-top: 2rem;
   margin-bottom: 2rem;
+  
 }
 
 
@@ -68,12 +69,16 @@ body {
 }
 .card {
   color:black;
+  box-shadow: 5px 10px 10px rgb(0 0 0 / .8);
 }
 
 .nav-item {
   color:var(--color-accent);
 }
 
+.nav-link {
+  transition: .3s ease-in-out;
+}
 .nav-link:hover {
   font-size: larger;
 }
@@ -100,6 +105,7 @@ body {
 .socialBtn {
   background-color: var(--bg-secondary);
   color: var(--color-secondary);
+  transition: .3s ease-in-out;
 }
 
 .socialBtn:hover {
@@ -109,6 +115,7 @@ body {
 .techButton {
   background-color: var(--bg-primary);
   color:var(--color-secondary);
+  transition: .3s ease-in-out;
   padding: 15px;
 }
 
@@ -130,6 +137,8 @@ ul {
   font-weight: 400;
   height:100%;
   width:100%;
+  font-size: 1em;
+  box-shadow: 5px 10px 10px rgb(0 0 0 / .8);
 }
 
 #profileImg {
@@ -137,6 +146,7 @@ ul {
   height:100%;
   width:100%;
   object-fit: cover;
+  box-shadow: 5px 10px 10px rgb(0 0 0 / .8);
 }
 
 .techDivContainer {
@@ -167,6 +177,7 @@ ul {
   color: var(--bg-primary);
   background-color: var(--bg-secondary);
   font-weight: bolder;
+  transition: .3s ease-in-out;
 }
 
 #butonsUl {
@@ -181,6 +192,7 @@ ul {
 
 svg {
   fill: var(--bg-primary);
+  transition: .3s ease-in-out;
 }
 
 svg:hover {
