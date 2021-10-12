@@ -28,12 +28,13 @@ body {
 .logoDiv{
   font-family: var(--font-special);
   font-size: 2rem;
-  color: var(--color-accent);
+  color:rgb(7, 201, 0);
 }
 
 
 .cover-container {
   background-image: url('../images/keyboard.jpg');
+  width: 100vw;
   background-size: cover;
 }
 
@@ -46,9 +47,10 @@ body {
 }
 
 .sectionTitleContainer {
-  background-color:var(--color-secondary);
-  color: black;
-  border-radius: 15px;
+  background-color:var(--bg-secondary);
+  color: var(--color-primary);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 #about, #technologies, #projects, #contact {
@@ -60,21 +62,20 @@ body {
 }
 
 
-nav {
-  background-color:var(--bg-primary);
-  color: var(--color-secondary);
-  border-radius: 15px; 
 
+.fas {
+  color:var(--color-accent);
 }
-
 .card {
   color:black;
 }
 
+.nav-item {
+  color:var(--color-accent);
+}
 
-
-nav{
-  background-color: rgb(7, 125, 189);
+.nav-link:hover {
+  font-size: larger;
 }
 
 .modal-body {
@@ -83,27 +84,115 @@ nav{
 
 .card-link {
   text-decoration: none;
-  color: var(--color-accent);
+  color: black;
   font-size: 1.2rem;
+  
   
 }
 
-.card-link:hover {
-  font-size: 1.3rem;
-  font-weight: bolder;
-  color:var(--color-accent);
-
+.card-footer li {
+  margin-top:10px;
 }
 
-.btn {
+
+
+
+.socialBtn {
   background-color: var(--bg-secondary);
+  color: var(--color-secondary);
 }
 
-.btn:hover {
+.socialBtn:hover {
   background-color: var(--color-accent);
-  font-size:1.3rem;
+}
+
+.techButton {
+  background-color: var(--bg-primary);
+  color:var(--color-secondary);
+  padding: 15px;
+}
+
+.techButton:hover {
+  color:var(--color-primary);
+  padding: 15px;
 }
 
 ul {
   list-style-type: none;
+}
+.btn {
+  width:100%;
+}
+
+.aboutMeText {
+  background-color: var(--color-secondary);
+  color: var(--bg-primary);
+  font-weight: 400;
+  height:100%;
+  width:100%;
+}
+
+#profileImg {
+  background-color: var(--bg-primary);
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.techDivContainer {
+  color: var(--color-primary);
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-body, .card-footer {
+  background-color: var(--color-secondary);
+}
+
+.card-title {
+  font-size: 1.5em;
+  background-color: var(--bg-primary);
+  color: var(--color-primary);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-text {
+  padding: 3px 10px;
+}
+
+.card-title:hover {
+  color: var(--bg-primary);
+  background-color: var(--bg-secondary);
+  font-weight: bolder;
+}
+
+#butonsUl {
+  padding-left:0;
+}
+
+.card-img-top {
+  align-items: center;
+}
+
+
+
+svg {
+  fill: var(--bg-primary);
+}
+
+svg:hover {
+  width: 70px;
+  height: 70px;
+}
+
+.contactText {
+  color:var(--bg-primary);
+}
+
+
+.nav-item {
+  margin-right: 1.1em;
 }
