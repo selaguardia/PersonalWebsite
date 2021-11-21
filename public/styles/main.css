@@ -71,7 +71,7 @@ body {
   box-shadow: 0 3px 10px var(--medium-champagne);
 }
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: var(--medium-champagne);
   font-weight: 700!important;
 }
