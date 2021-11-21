@@ -18,8 +18,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sergio Laguardia</title>
-
+    <title>SL Portfolio</title>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -27,87 +26,64 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./normalize.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./public/styles/main.css" />
-
-    <script src="./public/"></script>
+    <!-- Navbar Icons -->
     <script
       src="https://kit.fontawesome.com/ea71ca504d.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.1/examples/product/"
-    />
   </head>
-  <body id="home">
-    <!-- navbar -->
-
-    <nav class="navbar navbar-expand-md navbar-dark">
+  <body class="vh-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <div class="logoDiv">
-          <h1>&lt;Serg /&gt;</h1>
-        </div>
+        <a href="" class="navbar-brand">&lt;Serg /&gt;</a>
 
-        <!-- toggle button for mobile nav -->
         <button
           class="navbar-toggler"
-          id="testButton"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#main-nav"
-          aria-controls="main-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navmenu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- navbar links -->
-        <div class="collapse navbar-collapse justify-content-end" id="main-nav">
-          <ul class="nav navbar-nav">
-            <li class="navStyle nav-item">
-              <a class="nav-link text-center" href="#" aria-current="true">
-                <i class="fas fa-home"></i>
-                <p>Home</p>
-              </a>
-            </li>
-            <li class="navStyle nav-item">
-              <a class="nav-link text-center" href="#about">
-                <i class="fas fa-home"></i>
-                <p>About</p>
-              </a>
-            </li>
-
-            <li class="navStyle nav-item">
-              <a class="nav-link text-center" href="#technologies"
-                ><i class="fas fa-wrench"></i>
-                <p>Technologies</p>
-              </a>
-            </li>
-            <li class="navStyle nav-item">
-              <a class="nav-link text-center" href="#projects"
-                ><i class="fas fa-briefcase"></i>
-                <p>Projects</p></a
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto text-center">
+            <li class="nav-item navbar-text px-2">
+              <a href="#home" class="nav-link">
+                <i class="fas fa-home"></i> Home</a
               >
             </li>
-            <li class="navStyle nav-item">
-              <a class="nav-link text-center" href="#contact"
-                ><i class="fas fa-address-card"></i>
-                <p>Contact</p></a
+            <li class="nav-item navbar-text px-2">
+              <a href="#about" class="nav-link">
+                <i class="fas fa-user"></i> About Me</a
               >
             </li>
-            <li class="navStyle nav-item">
+            <li class="nav-item navbar-text px-2">
+              <a href="#technologies" class="nav-link">
+                <i class="fas fa-wrench"></i> Technologies</a
+              >
+            </li>
+            <li class="nav-item navbar-text px-2">
+              <a href="#projects" class="nav-link">
+                <i class="fas fa-briefcase"></i> Projects</a
+              >
+            </li>
+            <li class="nav-item navbar-text px-2">
+              <a href="#contact" class="nav-link">
+                <i class="fas fa-address-card"></i> Contact</a
+              >
+            </li>
+            <li class="nav-item navbar-text px-2">
               <a
-                class="nav-link text-center"
-                href="public/images/ResumeSergioLaguardia.pdf"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                title="Download Resume"
-                download
-                ><i class="fas fa-file-download"></i>
-                <p>Resume</p></a
+                href="https://docs.google.com/document/d/1iFVzXAPLesUsMNqKBKzGPP2z7aVRvUN6P0NCZtFYpp4/edit?usp=sharing"
+                class="nav-link"
+              >
+                <i class="fas fa-file-download"></i> Resume</a
               >
             </li>
           </ul>
@@ -115,692 +91,615 @@
       </div>
     </nav>
 
-    <main class="container">
-      <!-- Homepage -->
-      <div class="d-flex h-100">
-        <div
-          class="
-            cover-container
-            d-flex
-            w-100
-            h-100
-            p-3
-            mx-auto
-            flex-column
-            rounded
-          "
-        >
-          <div class="px-3 coverText">
-            <div class="introText">
-              <h1>Hi, I'm Sergio Laguardia</h1>
-              <p class="lead">a software engineer</p>
+    <!-- home section -->
+    <section id="home" class="bg-info text-light px-5 py-3 h-100">
+      <div class="text-end pe-3">
+        <h1>Hi, I'm Sergio Laguardia</h1>
+        <p class="lead">a software engineer</p>
+      </div>
+    </section>
+    <!-- about section -->
+    <section id="about" class="container px-5 py-3">
+      <div>
+        <h2 class="section-title display-6 py-4 text-center">About Me</h2>
+      </div>
+
+      <div class="card about-card my-4 border-0">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img
+              src="./public/images/sergio.jpg"
+              class="img-fluid rounded-start"
+              alt="Photo of Sergio Laguardia"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <p class="card-text">
+                As a software engineer with a degree in business and experience
+                in customer service, I bring my business knowledge and apply it
+                to all of my coding projects. I naturally get excited and
+                passionate about visualizing and creating apps from the ground
+                up and seeing them come to life. I specialize in full-stack
+                JavaScript technologies (MERN stack: MongoDB, Express JS, React
+                JS, Node JS) to build complete web applications with API
+                systems.
+              </p>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- About Me -->
-      <div class="page-section" id="about">
-        <div class="sectionTitleContainer">
-          <h2 class="display-6 sectionTitle text-center py-4">About Me</h2>
-        </div>
-
-        <div class="container-fluid row py-5">
-          <div class="col-md-10 col-lg-8 col-xl-5 mx-auto profileImgDivBg">
-            <img
-              id="profileImg"
-              class="img-fluid rounded"
-              src="./public/images/sergio.jpg"
-              alt="Sergio Laguardia's Profile Picture"
-            />
-          </div>
-
-          <div class="col-md-10 col-lg-8 col-xl-5 mx-auto">
-            <p class="lead aboutMeText p-5 rounded">
-              As a software engineer with a degree in business and experience in
-              customer service, I bring my business knowledge and apply it to
-              all of my coding projects. I naturally get excited and passionate
-              about visualizing and creating apps from the ground up and seeing
-              them come to life. I specialize in full-stack JavaScript
-              technologies (MERN stack: MongoDB, Express JS, React JS, Node JS)
-              to build complete web applications with API systems.
-            </p>
-          </div>
-        </div>
+    </section>
+    <!-- technologies section -->
+    <section id="technologies" class="container px-5 py-3">
+      <div>
+        <h2 class="section-title display-6 py-4 text-center">Technologies</h2>
       </div>
-
-      <!-- Technologies  Section -->
-      <div class="text-center" id="technologies">
-        <div class="sectionTitleContainer">
-          <h2 class="display-6 sectionTitle text-center py-4">Technologies</h2>
-        </div>
-        <div class="row p-3 techDivContainer">
-          <div class="col-md-4 logoSpace col-lg-3 col-xxl-3 my-5">
+      <div class="container">
+        <div class="tech-background row text-center g-3">
+          <div class="col-6 col-md-4 col-lg-3 p-5">
             <img
-            class="techLogo"
-            src="https://img.icons8.com/color/144/000000/javascript--v1.png"
-            alt="JavaScript"
+              class="techLogo"
+              src="https://img.icons8.com/color/144/000000/javascript--v1.png"
+              alt="JavaScript"
             />
-            <h4 class="techText my-2">JavaScript</h4>
+            <h4 class="techText py-2">JavaScript</h4>
           </div>
-          <div class="col-md-4 logoSpace col-lg-3 col-xxl-3 my-5">
+          <div class="col-6 col-md-4 col-lg-3 p-5">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/python--v2.png"
               alt="Python3"
             />
-            <h4 class="techText my-2">Python</h4>
+            <h4 class="techText py-2">Python</h4>
           </div>
-          <div class="col-md-4 logoSpace col-lg-3 col-xxl-3 my-5">
+          <div class="col-6 col-md-4 col-lg-3 p-5">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/nodejs.png"
               alt="Node.js"
             />
-            <h4 class="techText my-2">Node.js</h4>
+            <h4 class="techText py-2">Node.js</h4>
           </div>
-          <div class="col-md-4 logoSpace col-lg-3 col-xxl-3 my-5">
+          <div class="col-6 col-md-4 col-lg-3 p-5">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/react-native.png"
               alt="React"
             />
-            <h4 class="techText my-2">React</h4>
+            <h4 class="techText py-2">React</h4>
           </div>
-          <div class="col-md-4 logoSpace col-lg-3 col-xxl-3 my-5">
+          <div class="col-6 col-md-4 col-lg-3 p-5">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/django.png"
               alt="Django"
             />
-            <h4 class="techText my-2">Django</h4>
+            <h4 class="techText py-2">Django</h4>
           </div>
-          <div class="col-md-4 logoSpace col-lg-3 col-xxl-3 my-5">
+          <div class="col-6 col-md-4 col-lg-3 p-5">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/html-5--v1.png"
               alt="HTML5"
             />
-            <h4 class="techText my-2">HTML5</h4>
+            <h4 class="techText py-2">HTML5</h4>
           </div>
-          <div class="col-md-4 logoSpace col-lg-3 col-xxl-3 my-5">
+          <div class="col-6 col-md-4 col-lg-3 p-5">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/css3.png"
               alt="CSS3"
             />
-            <h4 class="techText my-2">CSS</h4>
+            <h4 class="techText py-2">CSS</h4>
           </div>
-          <div class="col-md-4 logoSpace col-lg-3 col-xxl-3 my-5">
+          <div class="col-6 col-md-4 col-lg-3 p-5">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/bootstrap.png"
             />
-            <h4 class="techText my-2">Bootstrap</h4>
+            <h4 class="techText py-2">Bootstrap</h4>
           </div>
         </div>
       </div>
-
-      <!-- Projects  Section -->
-
-
-      <div id="projects" class="justify-content-center">
-        <div class="sectionTitleContainer">
-          <h2 class="display-6 sectionTitle text-center py-4">Projects</h2>
-        </div>
-
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 p-5">
-          <div class="col">
-            <div class="card h-100 border-0">
-              <div class="card-body">
-                <h5 class="card-title text-center">Uber Clone</h5>
-                <p class="card-text">
-                  Using React Native, I built an Uber clone application. 
-Utilized Google API's including Places, Directions, and Distance Matrix to calculate travel time, distance, cost, and real navigation.
-                </p>
-                <img
-                  src="./public/images/previewTwo.JPG"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-              <div class="card-footer text-center">
-                <ul id="butonsUl">
-                  <li>
-                    <!-- Button trigger modal -->
-                    <a
-                      type="button"
-                      class="btn techButton"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalUber"
-                    >
-                      Technology Used
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      type="button"
-                      href="https://github.com/selaguardia/Uber"
-                      class="btn socialBtn card-link"
-                      target="_blank"
-                    >
-                      GitHub
-                      <img
-                        src="https://img.icons8.com/material-outlined/48/000000/github.png"
-                      />
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      type="button"
-                      href="https://expo.dev/@sergiolaguardia/projects/uber-clone"
-                      class="btn socialBtn card-link"
-                      target="_blank"
-                    >
-                      Demo<img src="https://img.icons8.com/ios-filled/50/000000/youtube-live.png"/>
-                    </a>
-                  </li>
-
-           
-                </ul>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModalUber"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalOneLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalOneLabel">
-                          Uber Clone
-                        </h5>
-
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <strong>Language:</strong>
-                        <p>JavaScript</p>
+    </section>
+    <!-- projects section -->
+    <section id="projects" class="container px-5 py-3">
+      <div>
+        <h2 class="section-title display-6 py-4 text-center">Projects</h2>
+      </div>
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3 text-dark"
+      >
+        <div class="col">
+          <div class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title py-2 text-center">Uber Clone</h5>
+              <img
+                src="./public/images/previewTwo.JPG"
+                class="card-img-top"
+                alt="..."
+              />
+              <p class="card-text project-card-text pt-3">
+                Using React Native, I built an Uber clone application. Utilized
+                Google API's including Places, Directions, and Distance Matrix
+                to calculate travel time, distance, cost, and real navigation.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="container-fluid tech-button-div">
                 
-                        <strong>Frontend:</strong>
-                        <ul>
-                          <li>React Native</li>
-                          <li>React Redux</li>
-                          <li>Tailwaind CSS</li>
-                        </ul>
-                        <strong>Backend:</strong>
-                        <ul>
-                          <li>Node.js</li>
-                          <li>Expo</li>
-                          <li>Google API's</li>
-                        </ul>
-                      </div>
+                <!-- Button trigger modal -->
+                <a
+                  type="button"
+                  class="btn techButton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalUber"
+                >
+                Tech Used <i class="fas fa-wrench"></i> 
+                </a>
+              </div>
+              <div class="container-fluid social-buttons-div">
+                <a
+                  type="button"
+                  href="https://github.com/selaguardia/Uber"
+                  class="btn socialBtn card-link"
+                  target="_blank"
+                >
+                  GitHub
+                  <i class="fab fa-github"></i>
+                </a>
 
+                <a
+                  type="button"
+                  href="https://expo.dev/@sergiolaguardia/projects/uber-clone"
+                  class="socialBtn card-link btn"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-laptop-code"></i>
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModalUber"
+                tabindex="-1"
+                aria-labelledby="exampleModalUberLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalUberLabel">
+                        Uber Clone
+                      </h5>
+
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <strong>Language:</strong>
+                      <p>JavaScript</p>
+
+                      <strong>Frontend:</strong>
+                      <ul>
+                        <li>React Native</li>
+                        <li>React Redux</li>
+                        <li>Tailwaind CSS</li>
+                      </ul>
+                      <strong>Backend:</strong>
+                      <ul>
+                        <li>Node.js</li>
+                        <li>Expo</li>
+                        <li>Google API's</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <!-- End of Modal -->
               </div>
+              <!-- End of Modal -->
             </div>
           </div>
+        </div>
 
-          <div class="col">
-            <div class="card h-100 border-0">
-              <div class="card-body">
-                <h5 class="card-title text-center">Restaurant Overhaul</h5>
-                <p class="card-text">
-                  A full stack CRUD application where the client can create or
-                  edit menu items through a simple interface.
-                </p>
-                <img
-                  src="./public/images/restaurant.png"
-                  class="card-img-top"
-                  alt="..."
-                />
+        <div class="col">
+          <div class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title py-2 text-center">Restaurant Overhaul</h5>
+              <img
+                src="./public/images/restaurant.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <p class="card-text project-card-text pt-3">
+                A full stack CRUD application where the client can create or
+                edit menu items through a simple interface.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="container-fluid tech-button-div">
+                <!-- Button trigger modal -->
+                <a
+                  type="button"
+                  class="btn techButton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalOne"
+                >
+                Tech Used <i class="fas fa-wrench"></i>
+                </a>
               </div>
-              <div class="card-footer text-center">
-                <ul id="butonsUl">
-                  <li>
-                    <!-- Button trigger modal -->
-                    <a
-                      type="button"
-                      class="btn techButton"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalOne"
-                    >
-                      Technology Used
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      type="button"
-                      href="https://github.com/selaguardia/Restaurant-Overhaul"
-                      class="btn socialBtn card-link"
-                      target="_blank"
-                    >
-                      GitHub
-                      <img
-                        src="https://img.icons8.com/material-outlined/48/000000/github.png"
-                      />
-                    </a>
-                  </li>
+              <div class="container-fluid social-buttons-div">
+                <a
+                  type="button"
+                  href="https://github.com/selaguardia/Restaurant-Overhaul"
+                  class="btn socialBtn card-link"
+                  target="_blank"
+                >
+                  GitHub
+                  <i class="fab fa-github"></i>
+                </a>
 
-                  <li>
-                    <a
-                      type="button"
-                      href="https://restaurant-overhaul.herokuapp.com/"
-                      class="btn socialBtn card-link"
-                      target="_blank"
-                    >
-                      Demo<img src="https://img.icons8.com/ios-filled/50/000000/youtube-live.png"/>
-                    </a>
-                  </li>
+                <a
+                  type="button"
+                  href="https://restaurant-overhaul.herokuapp.com/"
+                  class="btn socialBtn card-link"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-laptop-code"></i>
+                </a>
+              </div>
 
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModalOne"
+                tabindex="-1"
+                aria-labelledby="exampleModalOneLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalOneLabel">
+                        Restaurant Overhaul
+                      </h5>
+
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <strong>Language:</strong>
+                      <p>JavaScript</p>
+                      <strong>Type:</strong>
+                      <p>MEN Stack CRUD application</p>
+                      <strong>Frontend:</strong>
+                      <ul>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>EJS</li>
+                      </ul>
+                      <strong>Backend:</strong>
+                      <ul>
+                        <li>MongoDB</li>
+                        <li>Express.js</li>
+                        <li>Node.js</li>
+                        <li>jQuery</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Modal -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title py-2 text-center">Project Wayfarer</h5>
+              <img
+                src="./public/images/wayfarer.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <p class="card-text project-card-text pt-3">
+                A full-stack CRUD blog application. Social media site where
+                users can share street art from around the world.
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <div class="container-fluid tech-button-div">
+                <!-- Button trigger modal -->
+                <a
+                  type="button"
+                  class="btn techButton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalTwo"
+                >
+                Tech Used <i class="fas fa-wrench"></i>
+                </a>
+              </div>
+              <div class="container-fluid social-buttons-div">
+                <a
+                  type="button"
+                  href="https://github.com/selaguardia/ProjectWayfarer"
+                  target="_blank"
+                  class="btn socialBtn card-link"
+                >
+                  GitHub
+                  <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                  href="https://wayfarer-art-app.herokuapp.com/"
+                  class="btn socialBtn card-link"
+                  type="button"
+                  target="_blank"
+                >
+                  Demo
+                  <i class="fas fa-laptop-code"></i>
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModalTwo"
+                tabindex="-1"
+                aria-labelledby="exampleModalTwoLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalTwoLabel">
+                        Project Wayfarer
+                      </h5>
+
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <strong>Language:</strong>
+                      <p>Python</p>
+                      <strong>Type:</strong>
+                      <p>Django CRUD application</p>
+                      <strong>Frontend:</strong>
+                      <ul>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>DTL</li>
+                      </ul>
+                      <strong>Backend:</strong>
+                      <ul>
+                        <li>PostgreSQL</li>
+                        <li>Express.js</li>
+                        <li>Heroku</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Modal -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title py-2 text-center">Instabump</h5>
+              <img
+                src="./public/images/instabump.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <p class="card-text project-card-text pt-3">
+                Reverse engineered a full-stack social media app utilizing MEN
+                stack.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="container-fluid tech-button-div">
+                <!-- Button trigger modal -->
+                <a
+                type="button"
+                class="btn techButton"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalThree"
+              >
+              Tech Used <i class="fas fa-wrench"></i>
+              </a>
+              </div>
+              <div class="container-fluid social-buttons-div">
+                <a
+                  href="https://github.com/selaguardia/Instabump"
+                  target="_blank"
+                  class="btn socialBtn card-link"
+                  type="button"
+                >
+                  GitHub <i class="fab fa-github"></i>
+                </a>
+          
+                <a
+                  type="button"
+                  href="https://github.com/selaguardia/Instabump"
+                  class="btn socialBtn card-link"
+                  target="_blank"
+                >
+                  Demo
+                  <i class="fas fa-laptop-code"></i>
+                </a>
+              </div>
+          
                  
-                </ul>
+       
 
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModalOne"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalOneLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalOneLabel">
-                          Restaurant Overhaul
-                        </h5>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModalThree"
+                tabindex="-1"
+                aria-labelledby="exampleModalThreeLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalThreeLabel">
+                        Instabump
+                      </h5>
 
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <strong>Language:</strong>
-                        <p>JavaScript</p>
-                        <strong>Type:</strong>
-                        <p>MEN Stack CRUD application</p>
-                        <strong>Frontend:</strong>
-                        <ul>
-                          <li>CSS</li>
-                          <li>Bootstrap</li>
-                          <li>EJS</li>
-                        </ul>
-                        <strong>Backend:</strong>
-                        <ul>
-                          <li>MongoDB</li>
-                          <li>Express.js</li>
-                          <li>Node.js</li>
-                          <li>jQuery</li>
-                        </ul>
-                      </div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <strong>Language:</strong>
+                      <p>JavaScript</p>
+                      <strong>Type:</strong>
+                      <p>MEN Stack CRUD application</p>
+                      <strong>Frontend:</strong>
+                      <ul>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>EJS</li>
+                      </ul>
+                      <strong>Backend:</strong>
+                      <ul>
+                        <li>MongoDB</li>
+                        <li>Express.js</li>
+                        <li>Node.js</li>
+                        <li>jQuery</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-                <!-- End of Modal -->
               </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 border-0">
-              <div class="card-body">
-                <h5 class="card-title text-center">Project Wayfarer</h5>
-                <p class="card-text">
-                  A full-stack CRUD blog application. Social media site where
-                  users can share street art from around the world.
-                </p>
-
-                <img
-                  src="./public/images/wayfarer.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-
-              <div class="card-footer text-center">
-                <ul id="butonsUl">
-                  <li>
-                    <!-- Button trigger modal -->
-                    <a
-                      type="button"
-                      class="btn techButton"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalTwo"
-                    >
-                      Technology Used
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      type="button"
-                      href="https://github.com/selaguardia/ProjectWayfarer"
-                      target="_blank"
-                      class="btn socialBtn card-link"
-                    >
-                      GitHub
-                      <img
-                        src="https://img.icons8.com/material-outlined/48/000000/github.png"
-                      />
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href="https://wayfarer-art-app.herokuapp.com/"
-                      class="btn socialBtn card-link"
-                      type="button"
-                      target="_blank"
-                    >
-                      Demo
-                      <img src="https://img.icons8.com/ios-filled/50/000000/youtube-live.png"/>
-                    </a>
-                  </li>
-
-                  
-                </ul>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModalTwo"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalTwoLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalTwoLabel">
-                          Project Wayfarer
-                        </h5>
-
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <strong>Language:</strong>
-                        <p>Python</p>
-                        <strong>Type:</strong>
-                        <p>Django CRUD application</p>
-                        <strong>Frontend:</strong>
-                        <ul>
-                          <li>CSS</li>
-                          <li>Bootstrap</li>
-                          <li>DTL</li>
-                        </ul>
-                        <strong>Backend:</strong>
-                        <ul>
-                          <li>PostgreSQL</li>
-                          <li>Express.js</li>
-                          <li>Heroku</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Modal -->
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card h-100 border-0">
-              <div class="card-body">
-                <h5 class="card-title text-center">Instabump</h5>
-                <p class="card-text">
-                  Reverse engineered a full-stack social media app utilizing MEN
-                  stack.
-                </p>
-
-                <img
-                  src="./public/images/instabump.png"
-                  class="card-img-top"
-                  alt="..."
-                />
-              </div>
-              <div class="card-footer text-center">
-                <ul id="butonsUl">
-                  <li>
-                    <!-- Button trigger modal -->
-                    <a
-                      type="button"
-                      class="btn techButton"
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalThree"
-                    >
-                      Technology Used
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/selaguardia/Instabump"
-                      target="_blank"
-                      class="btn socialBtn card-link"
-                      type="button"
-                    >
-                      GitHub<img
-                        src="https://img.icons8.com/material-outlined/48/000000/github.png"
-                      />
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      type="button"
-                      href="https://github.com/selaguardia/Instabump"
-                      class="btn socialBtn card-link"
-                      target="_blank"
-                    >
-                      Demo
-                      <img src="https://img.icons8.com/ios-filled/50/000000/youtube-live.png"/>
-                    </a>
-                  </li>
-                  
-                </ul>
-
-                <!-- Modal -->
-                <div
-                  class="modal fade"
-                  id="exampleModalThree"
-                  tabindex="-1"
-                  aria-labelledby="exampleModalThreeLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalThreeLabel">
-                          Instabump
-                        </h5>
-
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <strong>Language:</strong>
-                        <p>JavaScript</p>
-                        <strong>Type:</strong>
-                        <p>MEN Stack CRUD application</p>
-                        <strong>Frontend:</strong>
-                        <ul>
-                          <li>CSS</li>
-                          <li>Bootstrap</li>
-                          <li>EJS</li>
-                        </ul>
-                        <strong>Backend:</strong>
-                        <ul>
-                          <li>MongoDB</li>
-                          <li>Express.js</li>
-                          <li>Node.js</li>
-                          <li>jQuery</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- End of Modal -->
-              </div>
+              <!-- End of Modal -->
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <footer id="contact">
-        <div class="sectionTitleContainer bg-secondary">
-          <h2 class="display-6 sectionTitle text-center py-2">Contact Me</h2>
-        </div>
-        <div class="row text-center py-5">
-          <div class="col-md-6 footerLogoDiv">
-            <a
-              class="py-3 text-decoration-none"
-              target="_blank"
-              href="mailto:sergioslaguardia@gmail.com"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-envelope"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
-                />
-              </svg>
-              <p class="contactText pt-3">sergioslaguardia@gmail.com</p>
-            </a>
-          </div>
+    <!-- contact section -->
+    <section id="contact" class="container px-5 py-3">
+      <div>
+        <h2 class="section-title display-6 py-4 text-center">Contact</h2>
+      </div>
 
-          <div class="col-md-6 footerLogoDiv">
-            <a
-              class="py-3 text-decoration-none"
-              target="_blank"
-              href="public/images/ResumeSergioLaguardia.pdf"
-              download
+      <div class="row text-center g-5 my-5">
+        <div class="col-12 col-md-6 col-xl-3">
+          <a
+            class="py-3 text-decoration-none"
+            target="_blank"
+            href="mailto:sergioslaguardia@gmail.com"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-file-earmark-person"
-                viewBox="0 0 16 16"
-              >
-                <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                <path
-                  d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"
-                />
-                <p class="contactText pt-3">Download Resume</p>
-              </svg>
-            </a>
-          </div>
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+              />
+            </svg>
+            <p class="contactText pt-3">sergioslaguardia@gmail.com</p>
+          </a>
         </div>
-        <div class="container">
-          <hr />
+        <div class="col-12 col-md-6 col-xl-3">
+          <a
+            class="py-3 text-decoration-none"
+            target="_blank"
+            href="public/images/ResumeSergioLaguardia.pdf"
+            download
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-file-earmark-person"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"
+              />
+              <p class="contactText pt-3">Download Resume</p>
+            </svg>
+          </a>
         </div>
-        <div class="row text-center py-5">
-          <div class="col-md-4 footerLogoDiv">
-            <a
-              class="py-3 text-decoration-none"
-              target="_blank"
-              href="https://github.com/selaguardia"
+        <div class="col-12 col-md-6 col-xl-3">
+          <a
+            class="py-3 text-decoration-none"
+            target="_blank"
+            href="https://github.com/selaguardia"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-github"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                />
-              </svg>
-              <p class="contactText pt-3">GitHub</p>
-            </a>
-          </div>
-
-          <div class="col-md-4 footerLogoDiv">
-            <a
-              class="py-3 text-decoration-none"
-              target="_blank"
-              href="https://linkedin.com/in/sergiolaguardia"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-linkedin"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                />
-              </svg>
-              <p class="contactText pt-3">LinkedIn</p>
-            </a>
-          </div>
-
-          <div class="col-md-4 footerLogoDiv">
-            <a
-              class="py-3 text-decoration-none"
-              target="_blank"
-              href="https://www.instagram.com/__.serg.__"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="50"
-                height="50"
-                fill="currentColor"
-                class="bi bi-instagram"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                />
-              </svg>
-              <p class="contactText pt-3">Instagram</p>
-            </a>
-          </div>
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+            <p class="contactText pt-3">GitHub</p>
+          </a>
         </div>
-      </footer>
-    </main>
+        <div class="col-12 col-md-6 col-xl-3">
+          <a
+            class="py-3 text-decoration-none"
+            target="_blank"
+            href="https://linkedin.com/in/sergiolaguardia"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+              />
+            </svg>
+            <p class="contactText pt-3">LinkedIn</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <script
-      src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
   </body>

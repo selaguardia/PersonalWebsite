@@ -1,210 +1,130 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400&family=VT323&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400&family=VT323&display=swap");
 
 :root {
-  --font-regular:'IBM Plex Mono', monospace;
-  --font-special:'VT323', monospace;
+  --font-regular: "IBM Plex Mono", monospace;
+  --font-logo: "VT323", monospace;
 
-  --bg-primary: #0d3082ff;
-  --bg-secondary: #2784b9ff;
-  --color-primary: rgba(227, 230, 255, 0.968);
-  --color-secondary: #b3a8a8ff;
-  --color-accent:#70ae6eff;
+  --rich-black-fogra-29: #001219ff;
+  --blue-sapphire: #005f73ff;
+  --viridian-green: #0a9396ff;
+  --middle-blue-green: #94d2bdff;
+  --medium-champagne: #e9d8a6ff;
+  --off-white: rgb(47, 193, 223);
 }
-
-
-/* Global */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  background-color: var(--bg-primary);
+  background-color: var(--rich-black-fogra-29);
   font-family: var(--font-regular);
+  color: var(--viridian-green);
 }
 
-.logoDiv{
-  font-family: var(--font-special);
+/* Navbar */
+.navbar {
+  background-color: var(--rich-black-fogra-29);
+}
+.navbar-brand {
+  font-family: var(--font-logo);
   font-size: 2rem;
-  color:rgb(7, 201, 0);
+  color: var(--middle-blue-green) !important;
+}
+.nav-link {
+  color: var(--viridian-green) !important;
+}
+.nav-link:hover {
+  color: var(--medium-champagne) !important;
+  border-bottom: 3px solid var(--middle-blue-green);
 }
 
-
-.cover-container {
-  background-image: url('../images/keyboard.jpg');
-  width: 100vw;
+/* Home page */
+#home {
+  background-image: url("../images/keyboard.jpg");
   background-size: cover;
 }
 
-.coverText {
-  text-align: right!important;
-  min-height:90vh;
-  margin-top: 100px;
-  margin-right: 100px;
-  color:var(--color-primary);
+/* All sections */
+.section-title {
+  background-color: var(--blue-sapphire);
+  color: var(--middle-blue-green);
+  border-radius: 7px;
+  font-weight: 400;
+  box-shadow: 0 3px 10px var(--medium-champagne);
 }
 
-.sectionTitleContainer {
-  background-color:var(--bg-secondary);
-  color: var(--color-primary);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+/* About Me section */
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+.about-card {
+  background-color: var(--rich-black-fogra-29);
+  color: var(--medium-champagne);
 }
 
-#about, #technologies, #projects, #contact {
-  background-color:var(--color-accent);
-  color: black;
-  border-radius: 15px; 
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  
+/* Technologies */
+.techText {
+  color: var(--medium-champagne);
 }
 
-
-
-.fas {
-  color:var(--color-accent);
+/*  Project section */
+.project-card {
+  background-color: var(--blue-sapphire);
+  border-radius: 7px;
+  box-shadow: 0 3px 10px var(--medium-champagne);
 }
-.card {
-  color:black;
-  box-shadow: 5px 10px 10px rgb(0 0 0 / .8);
+.card-title {
+  font-size: 1.5rem;
+  color: var(--medium-champagne);
+  font-weight: 700!important;
 }
-
-.nav-item {
-  color:var(--color-accent);
-}
-
-.nav-link {
-  transition: .3s ease-in-out;
-}
-.nav-link:hover {
-  font-size: larger;
+.project-card-text {
+  color: var(--off-white);
 }
 
-.modal-body {
-  text-align: left;
-}
-
-.card-link {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-  
-  
-}
-
-.card-footer li {
-  margin-top:10px;
-}
-
-
-
-
-.socialBtn {
-  background-color: var(--bg-secondary);
-  color: var(--color-secondary);
-  transition: .3s ease-in-out;
-}
-
-.socialBtn:hover {
-  background-color: var(--color-accent);
+.tech-button-div {
+  display:flex;
+  justify-content: center;
+  padding: 15px 0;
 }
 
 .techButton {
-  background-color: var(--bg-primary);
-  color:var(--color-secondary);
-  transition: .3s ease-in-out;
-  padding: 15px;
+  background-color: var(--rich-black-fogra-29);
+  color: var(--middle-blue-green);
+  font-size: 1.3rem;
 }
-
 .techButton:hover {
-  color:var(--color-primary);
-  padding: 15px;
+  color: var(--medium-champagne);
 }
 
-ul {
-  list-style-type: none;
-}
-.btn {
-  width:100%;
+.social-buttons-div {
+  display:flex;
+  justify-content: center;
 }
 
-.aboutMeText {
-  background-color: var(--color-secondary);
-  color: var(--bg-primary);
-  font-weight: 400;
-  height:100%;
-  width:100%;
-  font-size: 1em;
-  box-shadow: 5px 10px 10px rgb(0 0 0 / .8);
+.socialBtn{
+  color: var(--rich-black-fogra-29);
+  font-size: 1.3rem;
+}
+.socialBtn:hover {
+  color: var(--medium-champagne);
 }
 
-#profileImg {
-  background-color: var(--bg-primary);
-  height:100%;
-  width:100%;
-  object-fit: cover;
-  box-shadow: 5px 10px 10px rgb(0 0 0 / .8);
+/* Contact */
+/* Note
+you want on hover to change at the same time*/
+svg, .contactText {
+  color: var(--viridian-green);
 }
 
-.techDivContainer {
-  color: var(--color-primary);
+svg:hover, .contactText:hover {
+  color: var(--medium-champagne);
 }
 
-.card-body {
-  padding: 30px;
+.modal-content{
+  background-color: var(--blue-sapphire);
+  color:var(--off-white);
 }
 
-.card-body, .card-footer {
-  background-color: var(--color-secondary);
-}
-
-.card-title {
-  font-size: 1.5em;
-  background-color: var(--bg-primary);
-  color: var(--color-primary);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.card-text {
-  padding: 3px 10px;
-}
-
-.card-title:hover {
-  color: var(--bg-primary);
-  background-color: var(--bg-secondary);
-  font-weight: bolder;
-  transition: .3s ease-in-out;
-}
-
-#butonsUl {
-  padding-left:0;
-}
-
-.card-img-top {
-  align-items: center;
+.modal-title {
+  color: var(--medium-champagne);
 }
 
 
-
-svg {
-  fill: var(--bg-primary);
-  transition: .3s ease-in-out;
-}
-
-svg:hover {
-  width: 70px;
-  height: 70px;
-}
-
-.contactText {
-  color:var(--bg-primary);
-}
-
-
-.nav-item {
-  margin-right: 1.1em;
-}
