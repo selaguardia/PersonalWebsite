@@ -1,9 +1,7 @@
 import './homepage.scss'
 
-import React from 'react';
-
 function Homepage() {
-  return <div className='Homepage'>
+  return <div id='homepage'>
     <h1>Homepage Section</h1>
   </div>;
 }

@@ -1,3 +1,4 @@
+import './app.scss'
 import Navbar from "./components/navbar/Navbar";
 import Homepage from "./components/homepage/Homepage";
 import About from "./components/about/About";
@@ -9,11 +10,13 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <Homepage />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <div className="sections">
+        <Homepage />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   );
 }

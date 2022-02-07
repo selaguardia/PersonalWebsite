@@ -1,7 +1,7 @@
 import './contact.scss'
 
 function Contact() {
-  return <div className='contact'>
+  return <div id='contact'>
     <h1>Contact Section</h1>
   </div>;
 }

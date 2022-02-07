@@ -1,9 +1,7 @@
 import './projects.scss'
 
-import React from 'react';
-
 function Projects() {
-  return <div className='Projects'>
+  return <div id='projects'>
     <h1>Projects Section</h1>
   </div>;
 }

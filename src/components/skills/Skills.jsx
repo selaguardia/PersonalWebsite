@@ -1,9 +1,7 @@
 import './skills.scss'
 
-import React from 'react';
-
 function Skills() {
-  return <div className='Skills'>
+  return <div id='skills'>
     <h1>Skills Section</h1>
   </div>;
 }
