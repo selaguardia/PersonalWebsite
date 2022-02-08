@@ -98,6 +98,7 @@
         <p class="lead">a software engineer</p>
       </div>
     </section>
+
     <!-- about section -->
     <section id="about" class="container px-5 py-3">
       <div>
@@ -130,6 +131,7 @@
         </div>
       </div>
     </section>
+
     <!-- technologies section -->
     <section id="technologies" class="container px-5 py-3">
       <div>
@@ -203,6 +205,7 @@
         </div>
       </div>
     </section>
+
     <!-- projects section -->
     <section id="projects" class="container px-5 py-3">
       <div>
@@ -211,6 +214,97 @@
       <div
         class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 my-3 text-dark"
       >
+      <!-- E-commerce App -->
+        <div class="col">
+          <div class="card project-card h-100">
+            <div class="card-body">
+              <h5 class="card-title py-2 text-center">React Weather App</h5>
+              <img
+                src="./public/images/weatherApp.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <p class="card-text project-card-text pt-3">
+                A react web application where the the user can get Weather API calls through an easy user interface.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="container-fluid tech-button-div">
+                
+                <!-- Button trigger modal -->
+                <a
+                  type="button"
+                  class="btn techButton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalWeather"
+                >
+                Tech Used <i class="fas fa-wrench"></i> 
+                </a>
+              </div>
+              <div class="container-fluid social-buttons-div">
+                <a
+                  type="button"
+                  href="https://github.com/selaguardia/Weather"
+                  class="btn socialBtn card-link"
+                  target="_blank"
+                >
+                  GitHub
+                  <i class="fab fa-github"></i>
+                </a>
+
+                <a
+                  type="button"
+                  href="https://weather-app-lga.herokuapp.com/"
+                  class="socialBtn card-link btn"
+                  target="_blank"
+                >
+                  Demo <i class="fas fa-laptop-code"></i>
+                </a>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModalWeather"
+                tabindex="-1"
+                aria-labelledby="exampleModalWeatherLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalWeatherLabel">
+                        React Weather App
+                      </h5>
+
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <strong>Language:</strong>
+                      <p>JavaScript</p>
+
+                      <strong>Frontend:</strong>
+                      <ul>
+                        <li>React</li>
+                      </ul>
+                      <strong>Backend:</strong>
+                      <ul>
+                        <li>OpenWeatherMap API</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Modal -->
+            </div>
+          </div>
+        </div>
+
       <!-- E-commerce App -->
         <div class="col">
           <div class="card project-card h-100">
