@@ -777,3 +777,12 @@ section {
     object-fit: cover;
   }
 }
+
+#viewResume {
+  color: #37b3ed;
+}
+
+#viewResume:hover {
+  color: #3771ed;
+}
+
