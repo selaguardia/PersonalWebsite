@@ -1,801 +1,1042 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-HDKLQ03KJ2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-HDKLQ03KJ2");
-    </script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SL Portfolio</title>
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <!-- Normalize -->
-    <link rel="stylesheet" href="./normalize.css" />
-    <!-- CSS -->
-    <link rel="stylesheet" href="./public/styles/main.css" />
-    <!-- Navbar Icons -->
-    <script
-      src="https://kit.fontawesome.com/ea71ca504d.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body class="vh-100">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <a href="" class="navbar-brand">&lt;Serg /&gt;</a>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sergio Laguardia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Navbar Icons -->
+  <script
+  src="https://kit.fontawesome.com/ea71ca504d.js"
+  crossorigin="anonymous"
+></script>
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
 
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto text-center">
-            <li class="nav-item navbar-text px-2">
-              <a href="#home" class="nav-link">
-                <i class="fas fa-home"></i> Home</a
-              >
-            </li>
-            <li class="nav-item navbar-text px-2">
-              <a href="#about" class="nav-link">
-                <i class="fas fa-user"></i> About Me</a
-              >
-            </li>
-            <li class="nav-item navbar-text px-2">
-              <a href="#technologies" class="nav-link">
-                <i class="fas fa-wrench"></i> Technologies</a
-              >
-            </li>
-            <li class="nav-item navbar-text px-2">
-              <a href="#projects" class="nav-link">
-                <i class="fas fa-briefcase"></i> Projects</a
-              >
-            </li>
-            <li class="nav-item navbar-text px-2">
-              <a href="#contact" class="nav-link">
-                <i class="fas fa-address-card"></i> Contact</a
-              >
-            </li>
-            <li class="nav-item navbar-text px-2">
-              <a
-                href="https://docs.google.com/document/d/1iFVzXAPLesUsMNqKBKzGPP2z7aVRvUN6P0NCZtFYpp4/edit?usp=sharing"
-                class="nav-link"
-              >
-                <i class="fas fa-file-download"></i> Resume</a
-              >
-            </li>
-          </ul>
+  <!-- === nav toggle button === -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- === Header === -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Sergio Laguardia</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/selaguardia" class="github" target="_blank"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/sergiolaguardia/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
-    </nav>
 
-    <!-- home section -->
-    <section id="home" class="bg-info text-light px-5 py-3 h-100">
-      <div class="text-end pe-3">
-        <h1>Hi, I'm Sergio Laguardia</h1>
-        <p class="lead">a software engineer</p>
-      </div>
-    </section>
-    <!-- about section -->
-    <section id="about" class="container px-5 py-3">
-      <div>
-        <h2 class="section-title display-6 py-4 text-center">About Me</h2>
-      </div>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i><span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i><span>About</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i><span>Skills</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Projects<span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i><span>Resume</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i><span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <div class="card about-card my-4 border-0">
-        <div class="row g-0">
-          <div class="col-md-6">
-            <img
-              src="./public/images/sergio.jpg"
-              class="img-fluid rounded-start"
-              alt="Photo of Sergio Laguardia"
-            />
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <p class="card-text">
-                As a software engineer with a degree in business and experience
-                in customer service, I bring my business knowledge and apply it
-                to all of my coding projects. I naturally get excited and
-                passionate about visualizing and creating apps from the ground
-                up and seeing them come to life. I specialize in full-stack
-                JavaScript technologies (MERN stack: MongoDB, Express JS, React
-                JS, Node JS) to build complete web applications with API
-                systems.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- technologies section -->
-    <section id="technologies" class="container px-5 py-3">
-      <div>
-        <h2 class="section-title display-6 py-4 text-center">Technologies</h2>
-      </div>
+  <!-- === Hero Section === -->
+  <section id="hero" class="d-flex flex-column justify-content-start align-items-end">
+    <div class="hero-container mt-3 me-5" data-aos="fade-in">
+      <h1>Hi, I'm Sergio Laguardia</h1>
+      <p>I'm a <span class="typed" data-typed-items="Software Engineer, Designer, Developer, Freelancer, Traveler, Lifelong Learner"></span></p>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- === About Section === -->
+    <section id="about" class="about section-bg">
       <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Software Engineer (Full-stack), Freelancer</h3>
+            <p class="fst-italic">
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>September 29</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Science</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>415 535 2141</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>San Francisco Bay Area or NYC</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sergioslaguardia@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Positions:</strong> <span>Full-Stack, Back-End, Front-End, Web Developer</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              As a software engineer with a degree in business and experience in customer service, I bring my business knowledge and apply it to all of my coding projects. I naturally get excited and passionate about visualizing and creating apps from the ground up and seeing them come to life. I specialize in full-stack JavaScript technologies (MERN stack: MongoDB, Express JS, React JS, Node JS) to build complete web applications with API systems.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- === Skills Section === -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
         <div class="tech-background row text-center g-3">
-          <div class="col col-md-4 col-lg-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/javascript--v1.png"
               alt="JavaScript"
             />
-            <h4 class="techText">JavaScript</h4>
+            <h4 class="techText fs-6">JavaScript</h4>
           </div>
-          <div class="col col-md-4 col-lg-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/python--v2.png"
               alt="Python3"
             />
-            <h4 class="techText">Python</h4>
+            <h4 class="techText fs-6">Python</h4>
           </div>
-          <div class="col col-md-4 col-lg-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/nodejs.png"
               alt="Node.js"
             />
-            <h4 class="techText">Node.js</h4>
+            <h4 class="techText fs-6">Node.js</h4>
           </div>
-          <div class="col col-md-4 col-lg-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/react-native.png"
               alt="React"
             />
-            <h4 class="techText">React</h4>
+            <h4 class="techText fs-6">React</h4>
           </div>
-          <div class="col col-md-4 col-lg-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/django.png"
               alt="Django"
             />
-            <h4 class="techText">Django</h4>
+            <h4 class="techText fs-6">Django</h4>
           </div>
-          <div class="col col-md-4 col-lg-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/html-5--v1.png"
               alt="HTML5"
             />
-            <h4 class="techText">HTML5</h4>
+            <h4 class="techText fs-6">HTML</h4>
           </div>
-          <div class="col col-md-4 col-lg-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/css3.png"
               alt="CSS3"
             />
-            <h4 class="techText">CSS</h4>
+            <h4 class="techText fs-6">CSS</h4>
           </div>
-          <div class="col col-md-4 col-lg-3">
+          <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
               src="https://img.icons8.com/color/144/000000/bootstrap.png"
             />
-            <h4 class="techText">Bootstrap</h4>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- projects section -->
-    <section id="projects" class="container px-5 py-3">
-      <div>
-        <h2 class="section-title display-6 py-4 text-center">Projects</h2>
-      </div>
-      <div
-        class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 my-3 text-dark"
-      >
-      <!-- E-commerce App -->
-        <div class="col">
-          <div class="card project-card h-100">
-            <div class="card-body">
-              <h5 class="card-title py-2 text-center">E-commerce</h5>
-              <img
-                src="./public/images/ecommerce.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <p class="card-text project-card-text pt-3">
-                A full stack e-commerce CRUD application where the the owner can manage inventory with a simple user interface.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="container-fluid tech-button-div">
-                
-                <!-- Button trigger modal -->
-                <a
-                  type="button"
-                  class="btn techButton"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalEcommerce"
-                >
-                Tech Used <i class="fas fa-wrench"></i> 
-                </a>
-              </div>
-              <div class="container-fluid social-buttons-div">
-                <a
-                  type="button"
-                  href="https://github.com/selaguardia/E-commerceApp"
-                  class="btn socialBtn card-link"
-                  target="_blank"
-                >
-                  GitHub
-                  <i class="fab fa-github"></i>
-                </a>
-
-                <a
-                  type="button"
-                  href="https://laguardia-ecommerce.herokuapp.com/"
-                  class="socialBtn card-link btn"
-                  target="_blank"
-                >
-                  Demo <i class="fas fa-laptop-code"></i>
-                </a>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModalEcommerce"
-                tabindex="-1"
-                aria-labelledby="exampleModalEcommerceLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalEcommerceLabel">
-                        E-commerce
-                      </h5>
-
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <strong>Language:</strong>
-                      <p>JavaScript</p>
-
-                      <strong>Frontend:</strong>
-                      <ul>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>EJS</li>
-                      </ul>
-                      <strong>Backend:</strong>
-                      <ul>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Modal -->
-            </div>
-          </div>
-        </div>
-        <!-- Uber Clone -->
-        <div class="col">
-          <div class="card project-card h-100">
-            <div class="card-body">
-              <h5 class="card-title py-2 text-center">Uber Clone</h5>
-              <img
-                src="./public/images/previewTwo.JPG"
-                class="card-img-top"
-                alt="..."
-              />
-              <p class="card-text project-card-text pt-3">
-                Using React Native, I built an Uber clone application. Utilized
-                Google API's including Places, Directions, and Distance Matrix
-                to calculate travel time, distance, cost, and real navigation.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="container-fluid tech-button-div">
-                
-                <!-- Button trigger modal -->
-                <a
-                  type="button"
-                  class="btn techButton"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalUber"
-                >
-                Tech Used <i class="fas fa-wrench"></i> 
-                </a>
-              </div>
-              <div class="container-fluid social-buttons-div">
-                <a
-                  type="button"
-                  href="https://github.com/selaguardia/Uber"
-                  class="btn socialBtn card-link"
-                  target="_blank"
-                >
-                  GitHub
-                  <i class="fab fa-github"></i>
-                </a>
-
-                <a
-                  type="button"
-                  href="https://expo.dev/@sergiolaguardia/projects/uber-clone"
-                  class="socialBtn card-link btn"
-                  target="_blank"
-                >
-                  Demo <i class="fas fa-laptop-code"></i>
-                </a>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModalUber"
-                tabindex="-1"
-                aria-labelledby="exampleModalUberLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalUberLabel">
-                        Uber Clone
-                      </h5>
-
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <strong>Language:</strong>
-                      <p>JavaScript</p>
-
-                      <strong>Frontend:</strong>
-                      <ul>
-                        <li>React Native</li>
-                        <li>React Redux</li>
-                        <li>Tailwaind CSS</li>
-                      </ul>
-                      <strong>Backend:</strong>
-                      <ul>
-                        <li>Node.js</li>
-                        <li>Expo</li>
-                        <li>Google API's</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Modal -->
-            </div>
-          </div>
-        </div>
-        <!-- Restaurant -->
-        <div class="col">
-          <div class="card project-card h-100">
-            <div class="card-body">
-              <h5 class="card-title py-2 text-center">Restaurant Overhaul</h5>
-              <img
-                src="./public/images/restaurant.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <p class="card-text project-card-text pt-3">
-                A full stack CRUD application where the client can create or
-                edit menu items through a simple interface.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="container-fluid tech-button-div">
-                <!-- Button trigger modal -->
-                <a
-                  type="button"
-                  class="btn techButton"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalOne"
-                >
-                Tech Used <i class="fas fa-wrench"></i>
-                </a>
-              </div>
-              <div class="container-fluid social-buttons-div">
-                <a
-                  type="button"
-                  href="https://github.com/selaguardia/Restaurant-Overhaul"
-                  class="btn socialBtn card-link"
-                  target="_blank"
-                >
-                  GitHub
-                  <i class="fab fa-github"></i>
-                </a>
-
-                <a
-                  type="button"
-                  href="https://restaurant-overhaul.herokuapp.com/"
-                  class="btn socialBtn card-link"
-                  target="_blank"
-                >
-                  Demo <i class="fas fa-laptop-code"></i>
-                </a>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModalOne"
-                tabindex="-1"
-                aria-labelledby="exampleModalOneLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalOneLabel">
-                        Restaurant Overhaul
-                      </h5>
-
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <strong>Language:</strong>
-                      <p>JavaScript</p>
-                      <strong>Type:</strong>
-                      <p>MEN Stack CRUD application</p>
-                      <strong>Frontend:</strong>
-                      <ul>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>EJS</li>
-                      </ul>
-                      <strong>Backend:</strong>
-                      <ul>
-                        <li>MongoDB</li>
-                        <li>Express.js</li>
-                        <li>Node.js</li>
-                        <li>jQuery</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Modal -->
-            </div>
-          </div>
-        </div>
-        <!-- Wayfarer -->
-        <div class="col">
-          <div class="card project-card h-100">
-            <div class="card-body">
-              <h5 class="card-title py-2 text-center">Project Wayfarer</h5>
-              <img
-                src="./public/images/wayfarer.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <p class="card-text project-card-text pt-3">
-                A full-stack CRUD blog application. Social media site where
-                users can share street art from around the world.
-              </p>
-            </div>
-
-            <div class="card-footer">
-              <div class="container-fluid tech-button-div">
-                <!-- Button trigger modal -->
-                <a
-                  type="button"
-                  class="btn techButton"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModalTwo"
-                >
-                Tech Used <i class="fas fa-wrench"></i>
-                </a>
-              </div>
-              <div class="container-fluid social-buttons-div">
-                <a
-                  type="button"
-                  href="https://github.com/selaguardia/ProjectWayfarer"
-                  target="_blank"
-                  class="btn socialBtn card-link"
-                >
-                  GitHub
-                  <i class="fab fa-github"></i>
-                </a>
-
-                <a
-                  href="https://wayfarer-art-app.herokuapp.com/"
-                  class="btn socialBtn card-link"
-                  type="button"
-                  target="_blank"
-                >
-                  Demo
-                  <i class="fas fa-laptop-code"></i>
-                </a>
-              </div>
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModalTwo"
-                tabindex="-1"
-                aria-labelledby="exampleModalTwoLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalTwoLabel">
-                        Project Wayfarer
-                      </h5>
-
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <strong>Language:</strong>
-                      <p>Python</p>
-                      <strong>Type:</strong>
-                      <p>Django CRUD application</p>
-                      <strong>Frontend:</strong>
-                      <ul>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>DTL</li>
-                      </ul>
-                      <strong>Backend:</strong>
-                      <ul>
-                        <li>PostgreSQL</li>
-                        <li>Express.js</li>
-                        <li>Heroku</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Modal -->
-            </div>
-          </div>
-        </div>
-        <!-- Instabump -->
-        <div class="col">
-          <div class="card project-card h-100">
-            <div class="card-body">
-              <h5 class="card-title py-2 text-center">instaBump / Picbump</h5>
-              <img
-                src="./public/images/instabump.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <p class="card-text project-card-text pt-3">
-                Reverse engineered a full-stack social media app utilizing MEN
-                stack.
-              </p>
-            </div>
-            <div class="card-footer">
-              <div class="container-fluid tech-button-div">
-                <!-- Button trigger modal -->
-                <a
-                type="button"
-                class="btn techButton"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModalThree"
-              >
-              Tech Used <i class="fas fa-wrench"></i>
-              </a>
-              </div>
-              <div class="container-fluid social-buttons-div">
-                <a
-                  href="https://github.com/selaguardia/Instabump"
-                  target="_blank"
-                  class="btn socialBtn card-link"
-                  type="button"
-                >
-                  GitHub <i class="fab fa-github"></i>
-                </a>
-          
-                <a
-                  type="button"
-                  href="https://instabump.herokuapp.com/"
-                  class="btn socialBtn card-link"
-                  target="_blank"
-                >
-                  Demo
-                  <i class="fas fa-laptop-code"></i>
-                </a>
-              </div>
-          
-                 
-       
-
-              <!-- Modal -->
-              <div
-                class="modal fade"
-                id="exampleModalThree"
-                tabindex="-1"
-                aria-labelledby="exampleModalThreeLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalThreeLabel">
-                        instaBump / Picbump
-                      </h5>
-
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div class="modal-body">
-                      <strong>Language:</strong>
-                      <p>JavaScript</p>
-                      <strong>Type:</strong>
-                      <p>MEN Stack CRUD application</p>
-                      <strong>Frontend:</strong>
-                      <ul>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>EJS</li>
-                      </ul>
-                      <strong>Backend:</strong>
-                      <ul>
-                        <li>MongoDB</li>
-                        <li>Express.js</li>
-                        <li>Node.js</li>
-                        <li>jQuery</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End of Modal -->
-            </div>
+            <h4 class="techText fs-6">Bootstrap</h4>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- contact section -->
-    <section id="contact" class="container px-5 py-3">
-      <div>
-        <h2 class="section-title display-6 py-4 text-center">Contact</h2>
-      </div>
+    <!-- === Portfolio Section === -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
 
-      <div class="row text-center g-5 my-5">
-        <div class="col-12 col-md-6 col-xl-3">
-          <a
-            class="py-3 text-decoration-none"
-            target="_blank"
-            href="mailto:sergioslaguardia@gmail.com"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-envelope"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
-              />
-            </svg>
-            <p class="contactText pt-3">sergioslaguardia@gmail.com</p>
-          </a>
+        <div class="section-title">
+          <h2>Projects</h2>
         </div>
-        <div class="col-12 col-md-6 col-xl-3">
-          <a
-            class="py-3 text-decoration-none"
-            target="_blank"
-            href="https://docs.google.com/document/d/1iFVzXAPLesUsMNqKBKzGPP2z7aVRvUN6P0NCZtFYpp4/edit?usp=sharing"
+
+
+        <div class="row g-3" data-aos="fade-up" data-aos-delay="100">
+
+                    <!-- Restaurant -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="card project-card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title py-2 text-center">Restaurant Overhaul</h5>
+                          <img
+                            src="assets/img/portfolio/restaurant.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <p class="card-text project-card-text pt-3">
+                            A full stack CRUD application where the client can create or
+                            edit menu items through a simple interface.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="container-fluid tech-button-div">
+                            <!-- Button trigger modal -->
+                            <!-- <a
+                              type="button"
+                              class="btn techButton"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalOne"
+                              
+                            >
+                              Tech Used <i class="fas fa-wrench"></i>
+                            </a> -->
+                          </div>
+                          <div class="container-fluid social-buttons-div">
+                            <a
+                              type="button"
+                              href="https://github.com/selaguardia/Restaurant-Overhaul"
+                              class="btn socialBtn card-link"
+                              target="_blank"
+                            >
+                              GitHub
+                              <i class="fab fa-github"></i>
+                            </a>
             
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-file-earmark-person"
-              viewBox="0 0 16 16"
-            >
-              <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-              <path
-                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"
-              />
-              <p class="contactText pt-3">View Resume</p>
-            </svg>
-          </a>
+                            <a
+                              type="button"
+                              href="https://restaurant-overhaul.herokuapp.com/"
+                              class="btn socialBtn card-link"
+                              target="_blank"
+                            >
+                              Demo <i class="fas fa-laptop-code"></i>
+                            </a>
+                          </div>
+            
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModalOne"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalOneLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalOneLabel">
+                                    Restaurant Overhaul
+                                  </h5>
+            
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <strong>Language:</strong>
+                                  <p>JavaScript</p>
+                                  <strong>Type:</strong>
+                                  <p>MEN Stack CRUD application</p>
+                                  <strong>Frontend:</strong>
+                                  <ul>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>EJS</li>
+                                  </ul>
+                                  <strong>Backend:</strong>
+                                  <ul>
+                                    <li>MongoDB</li>
+                                    <li>Express.js</li>
+                                    <li>Node.js</li>
+                                    <li>jQuery</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End of Modal -->
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- React Weather App -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="card project-card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title py-2 text-center">React Weather App</h5>
+                          <img
+                            src="assets/img/portfolio/weatherApp.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <p class="card-text project-card-text pt-3">
+                            A react web application where the the user can get Weather API
+                            calls through an easy user interface.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="container-fluid tech-button-div">
+                            <!-- Button trigger modal -->
+                            <!-- <a
+                              type="button"
+                              class="btn techButton"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalWeather"
+                            >
+                              Tech Used <i class="fas fa-wrench"></i>
+                            </a> -->
+                          </div>
+                          <div class="container-fluid social-buttons-div">
+                            <a
+                              type="button"
+                              href="https://github.com/selaguardia/Weather"
+                              class="btn socialBtn card-link"
+                              target="_blank"
+                            >
+                              GitHub
+                              <i class="fab fa-github"></i>
+                            </a>
+            
+                            <a
+                              type="button"
+                              href="https://weather-app-lga.herokuapp.com/"
+                              class="socialBtn card-link btn"
+                              target="_blank"
+                            >
+                              Demo <i class="fas fa-laptop-code"></i>
+                            </a>
+                          </div>
+            
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModalWeather"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalWeatherLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalWeatherLabel">
+                                    React Weather App
+                                  </h5>
+            
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <strong>Language:</strong>
+                                  <p>JavaScript</p>
+            
+                                  <strong>Frontend:</strong>
+                                  <ul>
+                                    <li>React</li>
+                                  </ul>
+                                  <strong>Backend:</strong>
+                                  <ul>
+                                    <li>OpenWeatherMap API</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End of Modal -->
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- E-commerce App -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="card project-card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title py-2 text-center">E-commerce</h5>
+                          <img
+                            src="assets/img/portfolio/ecommerce.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <p class="card-text project-card-text pt-3">
+                            A full stack e-commerce CRUD application where the the owner can
+                            manage inventory with a simple user interface.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="container-fluid tech-button-div">
+                            <!-- Button trigger modal -->
+                            <!-- <a
+                              type="button"
+                              class="btn techButton"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalEcommerce"
+                            >
+                              Tech Used <i class="fas fa-wrench"></i>
+                            </a> -->
+                          </div>
+                          <div class="container-fluid social-buttons-div">
+                            <a
+                              type="button"
+                              href="https://github.com/selaguardia/E-commerceApp"
+                              class="btn socialBtn card-link"
+                              target="_blank"
+                            >
+                              GitHub
+                              <i class="fab fa-github"></i>
+                            </a>
+            
+                            <a
+                              type="button"
+                              href="https://laguardia-ecommerce.herokuapp.com/"
+                              class="socialBtn card-link btn"
+                              target="_blank"
+                            >
+                              Demo <i class="fas fa-laptop-code"></i>
+                            </a>
+                          </div>
+            
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModalEcommerce"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalEcommerceLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalEcommerceLabel">
+                                    E-commerce
+                                  </h5>
+            
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <strong>Language:</strong>
+                                  <p>JavaScript</p>
+            
+                                  <strong>Frontend:</strong>
+                                  <ul>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>EJS</li>
+                                  </ul>
+                                  <strong>Backend:</strong>
+                                  <ul>
+                                    <li>Node.js</li>
+                                    <li>Express</li>
+                                    <li>MongoDB</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End of Modal -->
+                        </div>
+                      </div>
+                    </div>
+          
+                    <!-- Uber Clone -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="card project-card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title py-2 text-center">Uber Clone</h5>
+                          <img
+                            src="assets/img/portfolio/previewTwo.JPG"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <p class="card-text project-card-text pt-3">
+                            Using React Native, I built an Uber clone application. Utilized
+                            Google API's including Places, Directions, and Distance Matrix
+                            to calculate travel time, distance, cost, and real navigation.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="container-fluid tech-button-div">
+                            <!-- Button trigger modal -->
+                            <!-- <a
+                              type="button"
+                              class="btn techButton"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalUber"
+                            >
+                              Tech Used <i class="fas fa-wrench"></i>
+                            </a> -->
+                          </div>
+                          <div class="container-fluid social-buttons-div">
+                            <a
+                              type="button"
+                              href="https://github.com/selaguardia/Uber"
+                              class="btn socialBtn card-link"
+                              target="_blank"
+                            >
+                              GitHub
+                              <i class="fab fa-github"></i>
+                            </a>
+            
+                            <a
+                              type="button"
+                              href="https://expo.dev/@sergiolaguardia/projects/uber-clone"
+                              class="socialBtn card-link btn"
+                              target="_blank"
+                            >
+                              Demo <i class="fas fa-laptop-code"></i>
+                            </a>
+                          </div>
+            
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModalUber"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalUberLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalUberLabel">
+                                    Uber Clone
+                                  </h5>
+            
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <strong>Language:</strong>
+                                  <p>JavaScript</p>
+            
+                                  <strong>Frontend:</strong>
+                                  <ul>
+                                    <li>React Native</li>
+                                    <li>React Redux</li>
+                                    <li>Tailwaind CSS</li>
+                                  </ul>
+                                  <strong>Backend:</strong>
+                                  <ul>
+                                    <li>Node.js</li>
+                                    <li>Expo</li>
+                                    <li>Google API's</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End of Modal -->
+                        </div>
+                      </div>
+                    </div>
+            
+                    <!-- Wayfarer -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="card project-card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title py-2 text-center">Project Wayfarer</h5>
+                          <img
+                            src="assets/img/portfolio/wayfarer.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <p class="card-text project-card-text pt-3">
+                            A full-stack CRUD blog application. Social media site where
+                            users can share street art from around the world.
+                          </p>
+                        </div>
+            
+                        <div class="card-footer">
+                          <div class="container-fluid tech-button-div">
+                            <!-- Button trigger modal -->
+                            <!-- <a
+                              type="button"
+                              class="btn techButton"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalTwo"
+                            >
+                              Tech Used <i class="fas fa-wrench"></i>
+                            </a> -->
+                          </div>
+                          <div class="container-fluid social-buttons-div">
+                            <a
+                              type="button"
+                              href="https://github.com/selaguardia/ProjectWayfarer"
+                              target="_blank"
+                              class="btn socialBtn card-link"
+                            >
+                              GitHub
+                              <i class="fab fa-github"></i>
+                            </a>
+            
+                            <a
+                              href="https://wayfarer-art-app.herokuapp.com/"
+                              class="btn socialBtn card-link"
+                              type="button"
+                              target="_blank"
+                            >
+                              Demo
+                              <i class="fas fa-laptop-code"></i>
+                            </a>
+                          </div>
+            
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModalTwo"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalTwoLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalTwoLabel">
+                                    Project Wayfarer
+                                  </h5>
+            
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <strong>Language:</strong>
+                                  <p>Python</p>
+                                  <strong>Type:</strong>
+                                  <p>Django CRUD application</p>
+                                  <strong>Frontend:</strong>
+                                  <ul>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>DTL</li>
+                                  </ul>
+                                  <strong>Backend:</strong>
+                                  <ul>
+                                    <li>PostgreSQL</li>
+                                    <li>Express.js</li>
+                                    <li>Heroku</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End of Modal -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Instabump -->
+                    <div class="col-lg-4 col-md-6">
+                      <div class="card project-card h-100">
+                        <div class="card-body">
+                          <h5 class="card-title py-2 text-center">instaBump / Picbump</h5>
+                          <img
+                            src="assets/img/portfolio/instabump.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <p class="card-text project-card-text pt-3">
+                            Reverse engineered a full-stack social media app utilizing MEN
+                            stack.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="container-fluid tech-button-div">
+                            <!-- Button trigger modal -->
+                            <!-- <a
+                              type="button"
+                              class="btn techButton"
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModalThree"
+                            >
+                              Tech Used <i class="fas fa-wrench"></i>
+                            </a> -->
+                          </div>
+                          <div class="container-fluid social-buttons-div">
+                            <a
+                              href="https://github.com/selaguardia/Instabump"
+                              target="_blank"
+                              class="btn socialBtn card-link"
+                              type="button"
+                            >
+                              GitHub <i class="fab fa-github"></i>
+                            </a>
+            
+                            <a
+                              type="button"
+                              href="https://instabump.herokuapp.com/"
+                              class="btn socialBtn card-link"
+                              target="_blank"
+                            >
+                              Demo
+                              <i class="fas fa-laptop-code"></i>
+                            </a>
+                          </div>
+            
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModalThree"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalThreeLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalThreeLabel">
+                                    instaBump / Picbump
+                                  </h5>
+            
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <strong>Language:</strong>
+                                  <p>JavaScript</p>
+                                  <strong>Type:</strong>
+                                  <p>MEN Stack CRUD application</p>
+                                  <strong>Frontend:</strong>
+                                  <ul>
+                                    <li>CSS</li>
+                                    <li>Bootstrap</li>
+                                    <li>EJS</li>
+                                  </ul>
+                                  <strong>Backend:</strong>
+                                  <ul>
+                                    <li>MongoDB</li>
+                                    <li>Express.js</li>
+                                    <li>Node.js</li>
+                                    <li>jQuery</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- End of Modal -->
+                        </div>
+                      </div>
+                    </div>
+
         </div>
-        <div class="col-12 col-md-6 col-xl-3">
-          <a
-            class="py-3 text-decoration-none"
-            target="_blank"
-            href="https://github.com/selaguardia"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-github"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-              />
-            </svg>
-            <p class="contactText pt-3">GitHub</p>
-          </a>
-        </div>
-        <div class="col-12 col-md-6 col-xl-3">
-          <a
-            class="py-3 text-decoration-none"
-            target="_blank"
-            href="https://linkedin.com/in/sergiolaguardia"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
-              fill="currentColor"
-              class="bi bi-linkedin"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-              />
-            </svg>
-            <p class="contactText pt-3">LinkedIn</p>
-          </a>
-        </div>
+
       </div>
     </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- === Resume Section === -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+            <a href="https://docs.google.com/document/d/1iFVzXAPLesUsMNqKBKzGPP2z7aVRvUN6P0NCZtFYpp4/edit?usp=sharing" target="_blank" id="viewResume">
+              <h4>View Current Resume</h4>
+            </a>
+            <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Sergio Laguardia</h4>
+              <ul>
+                <li>San Francisco Bay Area, California</li>
+                <li>(415) 535-2141</li>
+                <li>sergioslaguardia@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Full-Stack Software Engineer</h4>
+              <h5>June 2021 - Septembeer 2021</h5>
+              <p><em>General Assembly, remote</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Science: Business Administation</h4>
+              <h6>(Concentration: Information Systems)</h6>
+              <h5>2018-2020</h5>
+              <p><em>San Francisco State University</em></p>
+              <ul>
+                <li>Dean's List (2x)</li>
+                <li>SAP Recognition Award</li>
+                <li>Mendix Rapid Developer Certificate</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Associate of Science: Political Science</h4>
+              <h5>2015</h5>
+              <p><em>Diablo Valley College</em></p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Work Experience</h3>
+            <div class="resume-item">
+              <h4>Uber Driver</h4>
+              <h5>May 2013 - Mar 2020</h5>
+              <p><em>San Francisco, CA </em></p>
+              <ul>
+                <li>Achieved Top Driver status by having a 4.96 rating while completing 6,600+ rides in a fast-paced environment</li>
+                <li>Managed 15-30 clients daily; optimized routes by prioritizing unexpected traffic delays and passenger concerns</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Customer Service Representative</h4>
+              <h5>Jan 2017 - Sept 2017</h5>
+              <p><em>Mechanics Bank, Oakland, CA</em></p>
+              <ul>
+                <li>Assisted over 50 clients a day; Multi-tasked processing transactions discretely, & selling while communicating professionally</li>
+                <li>Created & implemented a new filing system and organized the office that led to increased efficient use of our time</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Guest Service Team Member</h4>
+              <h5>Sept 2011 - Aug 2013</h5>
+              <p><em>Target, Pinole, CA</em></p>
+              <ul>
+                <li>Awarded Employee of the Month & Cashier of Month (3x), mentored new hires, trained in multiple departments, & exceeded sales targets</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- === Services Section === -->
+    <!-- <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- === Testimonials Section === -->
+    <!-- <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Yesenia Sandoval</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Eddie Laguardia</h3>
+                <h4>Online Clothes Designer</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Joanne Brewster</h3>
+                <h4>Fried Pollo con Waffles Owner</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Henry Diaz</h3>
+                <h4>Pizza Shop Owner</h4>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Marta Ortega</h3>
+                <h4>Nail Shop Owner</h4>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- === Contact Section === -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+
+              <div class="email">
+                <a href="mailto:sergioslaguardia@gmail.com">
+                  <i class="bi bi-envelope"></i>
+                </a>
+                <h4>Email:</h4>
+                <p>sergioslaguardia@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <a href="tel:415-535-2141">
+                  <i class="bi bi-phone"></i>
+                </a>
+                <h4>Call:</h4>
+                <p>(415) 535-2141</p>
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403560.4102095129!2d-122.56004647140271!3d37.794358590204865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9b5ea6210a07%3A0xa2950f4ff149c910!2sSan%20Francisco%20Bay!5e0!3m2!1sen!2sus!4v1645462774773!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
