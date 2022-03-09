@@ -535,10 +535,11 @@ section {
 }
 
 .techButton {
-  background-color: ##7ad7f4;
+  background-color: #7ad7f4;
   color: #0e2442;
   font-size: 1.1rem;
 }
+
 .techButton:hover {
   background-color: #37b3ed;
   color: #0e2442;
