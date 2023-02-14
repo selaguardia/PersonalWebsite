@@ -33,7 +33,6 @@
 </head>
 
 <body>
-
   <!-- === nav toggle button === -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -93,17 +92,15 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>September 29th</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.S. Business Information Systems</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(415) 535-2141</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>SF Bay or NYC</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>SF Bay, NYC, or Remote</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sergioslaguardia@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Positions:</strong> <span>Full-Stack, Back-End, Front-End</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Positions:</strong> <span>Full-Stack, Frontend, Backend</span></li>
                 </ul>
               </div>
             </div>
@@ -126,10 +123,35 @@
           <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
+              src="https://img.icons8.com/color/144/000000/react-native.png"
+              alt="React"
+            />
+            <h4 class="techText fs-6">React</h4>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              class="techLogo"
+              src="https://img.icons8.com/color/144/000000/nodejs.png"
+              alt="Node.js"
+            />
+            <h4 class="techText fs-6">Node</h4>
+          </div>
+          
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              class="techLogo"
               src="https://img.icons8.com/color/144/000000/javascript--v1.png"
               alt="JavaScript"
             />
             <h4 class="techText fs-6">JavaScript</h4>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <img
+              class="techLogo"
+              src="https://img.icons8.com/color/144/000000/bootstrap.png"
+            />
+            <h4 class="techText fs-6">Bootstrap</h4>
           </div>
           <div class="col-6 col-md-4 col-lg-3">
             <img
@@ -139,22 +161,8 @@
             />
             <h4 class="techText fs-6">Python</h4>
           </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <img
-              class="techLogo"
-              src="https://img.icons8.com/color/144/000000/nodejs.png"
-              alt="Node.js"
-            />
-            <h4 class="techText fs-6">Node.js</h4>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <img
-              class="techLogo"
-              src="https://img.icons8.com/color/144/000000/react-native.png"
-              alt="React"
-            />
-            <h4 class="techText fs-6">React</h4>
-          </div>
+          
+
           <div class="col-6 col-md-4 col-lg-3">
             <img
               class="techLogo"
@@ -179,13 +187,7 @@
             />
             <h4 class="techText fs-6">CSS</h4>
           </div>
-          <div class="col-6 col-md-4 col-lg-3">
-            <img
-              class="techLogo"
-              src="https://img.icons8.com/color/144/000000/bootstrap.png"
-            />
-            <h4 class="techText fs-6">Bootstrap</h4>
-          </div>
+
         </div>
       </div>
     </section>
@@ -198,619 +200,284 @@
           <h2>Projects</h2>
         </div>
 
-
         <div class="row g-3" data-aos="fade-up" data-aos-delay="100">
           
+          <!-- Netflix Clone -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">Netflix Clone</h5>
+                <img
+                  src="assets/img/portfolio/netflixClone.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  A full stack MERN application that replicates the Netflix app. Users are able to sign up and login. Users can then filter by movies or series, and select genre.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    type="button"
+                    href="https://github.com/selaguardia/Netflix"
+                    class="btn socialBtn card-link"
+                    target="_blank"
+                  >
+                    GitHub
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                    <!-- Restaurant -->
-                    <div class="col-lg-4 col-md-6">
-                      <div class="card project-card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title py-2 text-center">Restaurant Overhaul</h5>
-                          <img
-                            src="assets/img/portfolio/restaurant.png"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <p class="card-text project-card-text pt-3">
-                            A full stack CRUD application where the client can create or
-                            edit menu items through a simple interface.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <div class="container-fluid tech-button-div">
-                            <!-- Modal button -->
+          <!-- Chatbot AI -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">Chatbot AI</h5>
+                <img
+                  src="assets/img/portfolio/chatbotAI.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  A fun chatbot using OpenAI's ChatGPT artificial intellenge to make your life easier. Try asking any question!
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    type="button"
+                    href="https://github.com/selaguardia/chatbotAI"
+                    class="btn socialBtn card-link"
+                    target="_blank"
+                  >
+                    GitHub
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Workout Tracker -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">Workout Tracker</h5>
+                <img
+                  src="assets/img/portfolio/workoutSignUp.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  A simple full stack MERN application to track your workouts.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    type="button"
+                    href="https://github.com/selaguardia/Workout-Tracker"
+                    class="btn socialBtn card-link"
+                    target="_blank"
+                  >
+                    GitHub
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Restaurant -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">Restaurant Overhaul</h5>
+                <img
+                  src="assets/img/portfolio/restaurant.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  A full stack CRUD application where the client can create or
+                  edit menu items through a simple interface.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    type="button"
+                    href="https://github.com/selaguardia/Restaurant-Overhaul"
+                    class="btn socialBtn card-link"
+                    target="_blank"
+                  >
+                    GitHub
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                            <!-- <a
-                              type="button"
-                              class="btn techButton"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModalOne"
-                              
-                            >
-                              Tech Used <i class="fas fa-wrench"></i>
-                            </a> -->
-
-                            <!-- Accordion tech used -->
-                            <!-- <div class="accordion accordion-flush" id="accordionExample">
-                              <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Tech Used
-                                  </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                  <div class="accordion-body">
-                                    <strong>Language:</strong>
-                                    <p>JavaScript</p>
-                                    <strong>Type:</strong>
-                                    <p>MEN Stack CRUD application</p>
-                                    <strong>Frontend:</strong>
-                                    <ul>
-                                      <li>CSS</li>
-                                      <li>Bootstrap</li>
-                                      <li>EJS</li>
-                                    </ul>
-                                    <strong>Backend:</strong>
-                                    <ul>
-                                      <li>MongoDB</li>
-                                      <li>Express.js</li>
-                                      <li>Node.js</li>
-                                      <li>jQuery</li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div> -->
-                          </div>
-                          <div class="container-fluid social-buttons-div">
-                            <a
-                              type="button"
-                              href="https://github.com/selaguardia/Restaurant-Overhaul"
-                              class="btn socialBtn card-link"
-                              target="_blank"
-                            >
-                              GitHub
-                              <i class="fab fa-github"></i>
-                            </a>
-            
-                            <a
-                              type="button"
-                              href="https://restaurant-overhaul.herokuapp.com/"
-                              class="btn socialBtn card-link"
-                              target="_blank"
-                            >
-                              Demo <i class="fas fa-laptop-code"></i>
-                            </a>
-                          </div>
-            
-                          <!-- Modal -->
-                          <div
-                            class="modal fade"
-                            id="exampleModalOne"
-                            tabindex="-1"
-                            aria-labelledby="exampleModalOneLabel"
-                            aria-hidden="true"
-                          >
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalOneLabel">
-                                    Restaurant Overhaul
-                                  </h5>
-            
-                                  <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                  ></button>
-                                </div>
-                                <div class="modal-body">
-                                  <strong>Language:</strong>
-                                  <p>JavaScript</p>
-                                  <strong>Type:</strong>
-                                  <p>MEN Stack CRUD application</p>
-                                  <strong>Frontend:</strong>
-                                  <ul>
-                                    <li>CSS</li>
-                                    <li>Bootstrap</li>
-                                    <li>EJS</li>
-                                  </ul>
-                                  <strong>Backend:</strong>
-                                  <ul>
-                                    <li>MongoDB</li>
-                                    <li>Express.js</li>
-                                    <li>Node.js</li>
-                                    <li>jQuery</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End of Modal -->
-                        </div>
-                      </div>
-                    </div>
+          <!-- Uber Clone -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">Uber Clone</h5>
+                <img
+                  src="assets/img/portfolio/previewTwo.JPG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  Using React Native, I built an Uber clone application. Utilized
+                  Google API's including Places, Directions, and Distance Matrix
+                  to calculate travel time, distance, cost, and real navigation.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    type="button"
+                    href="https://github.com/selaguardia/Uber"
+                    class="btn socialBtn card-link"
+                    target="_blank"
+                  >
+                    GitHub
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           
-                    <!-- React Weather App -->
-                    <div class="col-lg-4 col-md-6">
-                      <div class="card project-card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title py-2 text-center">React Weather App</h5>
-                          <img
-                            src="assets/img/portfolio/weatherApp.png"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <p class="card-text project-card-text pt-3">
-                            A react web application where the the user can get Weather API
-                            calls through an easy user interface.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <div class="container-fluid tech-button-div">
-                            <!-- Button trigger modal -->
-                            <!-- <a
-                              type="button"
-                              class="btn techButton"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModalWeather"
-                            >
-                              Tech Used <i class="fas fa-wrench"></i>
-                            </a> -->
-                          </div>
-                          <div class="container-fluid social-buttons-div">
-                            <a
-                              type="button"
-                              href="https://github.com/selaguardia/Weather"
-                              class="btn socialBtn card-link"
-                              target="_blank"
-                            >
-                              GitHub
-                              <i class="fab fa-github"></i>
-                            </a>
+          <!-- React Weather App -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">React Weather App</h5>
+                <img
+                  src="assets/img/portfolio/weatherApp.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  A react web application where the the user can get Weather API
+                  calls through an easy user interface.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    type="button"
+                    href="https://github.com/selaguardia/Weather"
+                    class="btn socialBtn card-link"
+                    target="_blank"
+                  >
+                    GitHub
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
             
-                            <a
-                              type="button"
-                              href="https://weather-app-lga.herokuapp.com/"
-                              class="socialBtn card-link btn"
-                              target="_blank"
-                            >
-                              Demo <i class="fas fa-laptop-code"></i>
-                            </a>
-                          </div>
+          <!-- E-commerce App -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">E-commerce</h5>
+                <img
+                  src="assets/img/portfolio/ecommerce.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  A full stack e-commerce CRUD application where the the owner can
+                  manage inventory with a simple user interface.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    type="button"
+                    href="https://github.com/selaguardia/E-commerceApp"
+                    class="btn socialBtn card-link"
+                    target="_blank"
+                  >
+                    GitHub
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
             
-                          <!-- Modal -->
-                          <div
-                            class="modal fade"
-                            id="exampleModalWeather"
-                            tabindex="-1"
-                            aria-labelledby="exampleModalWeatherLabel"
-                            aria-hidden="true"
-                          >
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalWeatherLabel">
-                                    React Weather App
-                                  </h5>
-            
-                                  <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                  ></button>
-                                </div>
-                                <div class="modal-body">
-                                  <strong>Language:</strong>
-                                  <p>JavaScript</p>
-            
-                                  <strong>Frontend:</strong>
-                                  <ul>
-                                    <li>React</li>
-                                  </ul>
-                                  <strong>Backend:</strong>
-                                  <ul>
-                                    <li>OpenWeatherMap API</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End of Modal -->
-                        </div>
-                      </div>
-                    </div>
-            
-                    <!-- E-commerce App -->
-                    <div class="col-lg-4 col-md-6">
-                      <div class="card project-card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title py-2 text-center">E-commerce</h5>
-                          <img
-                            src="assets/img/portfolio/ecommerce.png"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <p class="card-text project-card-text pt-3">
-                            A full stack e-commerce CRUD application where the the owner can
-                            manage inventory with a simple user interface.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <div class="container-fluid tech-button-div">
-                            <!-- Button trigger modal -->
-                            <!-- <a
-                              type="button"
-                              class="btn techButton"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModalEcommerce"
-                            >
-                              Tech Used <i class="fas fa-wrench"></i>
-                            </a> -->
-                          </div>
-                          <div class="container-fluid social-buttons-div">
-                            <a
-                              type="button"
-                              href="https://github.com/selaguardia/E-commerceApp"
-                              class="btn socialBtn card-link"
-                              target="_blank"
-                            >
-                              GitHub
-                              <i class="fab fa-github"></i>
-                            </a>
-            
-                            <a
-                              type="button"
-                              href="https://laguardia-ecommerce.herokuapp.com/"
-                              class="socialBtn card-link btn"
-                              target="_blank"
-                            >
-                              Demo <i class="fas fa-laptop-code"></i>
-                            </a>
-                          </div>
-            
-                          <!-- Modal -->
-                          <div
-                            class="modal fade"
-                            id="exampleModalEcommerce"
-                            tabindex="-1"
-                            aria-labelledby="exampleModalEcommerceLabel"
-                            aria-hidden="true"
-                          >
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalEcommerceLabel">
-                                    E-commerce
-                                  </h5>
-            
-                                  <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                  ></button>
-                                </div>
-                                <div class="modal-body">
-                                  <strong>Language:</strong>
-                                  <p>JavaScript</p>
-            
-                                  <strong>Frontend:</strong>
-                                  <ul>
-                                    <li>CSS</li>
-                                    <li>Bootstrap</li>
-                                    <li>EJS</li>
-                                  </ul>
-                                  <strong>Backend:</strong>
-                                  <ul>
-                                    <li>Node.js</li>
-                                    <li>Express</li>
-                                    <li>MongoDB</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End of Modal -->
-                        </div>
-                      </div>
-                    </div>
-          
-                    <!-- Uber Clone -->
-                    <div class="col-lg-4 col-md-6">
-                      <div class="card project-card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title py-2 text-center">Uber Clone</h5>
-                          <img
-                            src="assets/img/portfolio/previewTwo.JPG"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <p class="card-text project-card-text pt-3">
-                            Using React Native, I built an Uber clone application. Utilized
-                            Google API's including Places, Directions, and Distance Matrix
-                            to calculate travel time, distance, cost, and real navigation.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <div class="container-fluid tech-button-div">
-                            <!-- Button trigger modal -->
-                            <!-- <a
-                              type="button"
-                              class="btn techButton"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModalUber"
-                            >
-                              Tech Used <i class="fas fa-wrench"></i>
-                            </a> -->
-                          </div>
-                          <div class="container-fluid social-buttons-div">
-                            <a
-                              type="button"
-                              href="https://github.com/selaguardia/Uber"
-                              class="btn socialBtn card-link"
-                              target="_blank"
-                            >
-                              GitHub
-                              <i class="fab fa-github"></i>
-                            </a>
-            
-                            <a
-                              type="button"
-                              href="https://expo.dev/@sergiolaguardia/projects/uber-clone"
-                              class="socialBtn card-link btn"
-                              target="_blank"
-                            >
-                              Demo <i class="fas fa-laptop-code"></i>
-                            </a>
-                          </div>
-            
-                          <!-- Modal -->
-                          <div
-                            class="modal fade"
-                            id="exampleModalUber"
-                            tabindex="-1"
-                            aria-labelledby="exampleModalUberLabel"
-                            aria-hidden="true"
-                          >
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalUberLabel">
-                                    Uber Clone
-                                  </h5>
-            
-                                  <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                  ></button>
-                                </div>
-                                <div class="modal-body">
-                                  <strong>Language:</strong>
-                                  <p>JavaScript</p>
-            
-                                  <strong>Frontend:</strong>
-                                  <ul>
-                                    <li>React Native</li>
-                                    <li>React Redux</li>
-                                    <li>Tailwaind CSS</li>
-                                  </ul>
-                                  <strong>Backend:</strong>
-                                  <ul>
-                                    <li>Node.js</li>
-                                    <li>Expo</li>
-                                    <li>Google API's</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End of Modal -->
-                        </div>
-                      </div>
-                    </div>
-            
-                    <!-- Wayfarer -->
-                    <div class="col-lg-4 col-md-6">
-                      <div class="card project-card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title py-2 text-center">Project Wayfarer</h5>
-                          <img
-                            src="assets/img/portfolio/wayfarer.png"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <p class="card-text project-card-text pt-3">
-                            A full-stack CRUD blog application. Social media site where
-                            users can share street art from around the world.
-                          </p>
-                        </div>
-            
-                        <div class="card-footer">
-                          <div class="container-fluid tech-button-div">
-                            <!-- Button trigger modal -->
-                            <!-- <a
-                              type="button"
-                              class="btn techButton"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModalTwo"
-                            >
-                              Tech Used <i class="fas fa-wrench"></i>
-                            </a> -->
-                          </div>
-                          <div class="container-fluid social-buttons-div">
-                            <a
-                              type="button"
-                              href="https://github.com/selaguardia/ProjectWayfarer"
-                              target="_blank"
-                              class="btn socialBtn card-link"
-                            >
-                              GitHub
-                              <i class="fab fa-github"></i>
-                            </a>
-            
-                            <a
-                              href="https://wayfarer-art-app.herokuapp.com/"
-                              class="btn socialBtn card-link"
-                              type="button"
-                              target="_blank"
-                            >
-                              Demo
-                              <i class="fas fa-laptop-code"></i>
-                            </a>
-                          </div>
-            
-                          <!-- Modal -->
-                          <div
-                            class="modal fade"
-                            id="exampleModalTwo"
-                            tabindex="-1"
-                            aria-labelledby="exampleModalTwoLabel"
-                            aria-hidden="true"
-                          >
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalTwoLabel">
-                                    Project Wayfarer
-                                  </h5>
-            
-                                  <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                  ></button>
-                                </div>
-                                <div class="modal-body">
-                                  <strong>Language:</strong>
-                                  <p>Python</p>
-                                  <strong>Type:</strong>
-                                  <p>Django CRUD application</p>
-                                  <strong>Frontend:</strong>
-                                  <ul>
-                                    <li>CSS</li>
-                                    <li>Bootstrap</li>
-                                    <li>DTL</li>
-                                  </ul>
-                                  <strong>Backend:</strong>
-                                  <ul>
-                                    <li>PostgreSQL</li>
-                                    <li>Express.js</li>
-                                    <li>Heroku</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End of Modal -->
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Instabump -->
-                    <div class="col-lg-4 col-md-6">
-                      <div class="card project-card h-100">
-                        <div class="card-body">
-                          <h5 class="card-title py-2 text-center">instaBump / Picbump</h5>
-                          <img
-                            src="assets/img/portfolio/instabump.png"
-                            class="card-img-top"
-                            alt="..."
-                          />
-                          <p class="card-text project-card-text pt-3">
-                            Reverse engineered a full-stack social media app utilizing MEN
-                            stack.
-                          </p>
-                        </div>
-                        <div class="card-footer">
-                          <div class="container-fluid tech-button-div">
-                            <!-- Button trigger modal -->
-                            <!-- <a
-                              type="button"
-                              class="btn techButton"
-                              data-bs-toggle="modal"
-                              data-bs-target="#exampleModalThree"
-                            >
-                              Tech Used <i class="fas fa-wrench"></i>
-                            </a> -->
-                          </div>
-                          <div class="container-fluid social-buttons-div">
-                            <a
-                              href="https://github.com/selaguardia/Instabump"
-                              target="_blank"
-                              class="btn socialBtn card-link"
-                              type="button"
-                            >
-                              GitHub <i class="fab fa-github"></i>
-                            </a>
-            
-                            <a
-                              type="button"
-                              href="https://instabump.herokuapp.com/"
-                              class="btn socialBtn card-link"
-                              target="_blank"
-                            >
-                              Demo
-                              <i class="fas fa-laptop-code"></i>
-                            </a>
-                          </div>
-            
-                          <!-- Modal -->
-                          <div
-                            class="modal fade"
-                            id="exampleModalThree"
-                            tabindex="-1"
-                            aria-labelledby="exampleModalThreeLabel"
-                            aria-hidden="true"
-                          >
-                            <div class="modal-dialog">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalThreeLabel">
-                                    instaBump / Picbump
-                                  </h5>
-            
-                                  <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                  ></button>
-                                </div>
-                                <div class="modal-body">
-                                  <strong>Language:</strong>
-                                  <p>JavaScript</p>
-                                  <strong>Type:</strong>
-                                  <p>MEN Stack CRUD application</p>
-                                  <strong>Frontend:</strong>
-                                  <ul>
-                                    <li>CSS</li>
-                                    <li>Bootstrap</li>
-                                    <li>EJS</li>
-                                  </ul>
-                                  <strong>Backend:</strong>
-                                  <ul>
-                                    <li>MongoDB</li>
-                                    <li>Express.js</li>
-                                    <li>Node.js</li>
-                                    <li>jQuery</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- End of Modal -->
-                        </div>
-                      </div>
-                    </div>
+          <!-- Wayfarer -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">Project Wayfarer</h5>
+                <img
+                  src="assets/img/portfolio/wayfarer.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  A full-stack CRUD blog application. Social media site where
+                  users can share street art from around the world.
+                </p>
+              </div>
+  
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    type="button"
+                    href="https://github.com/selaguardia/ProjectWayfarer"
+                    target="_blank"
+                    class="btn socialBtn card-link"
+                  >
+                    GitHub
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instabump -->
+          <div class="col-lg-4 col-md-6">
+            <div class="card project-card h-100">
+              <div class="card-body">
+                <h5 class="card-title py-2 text-center">instaBump / Picbump</h5>
+                <img
+                  src="assets/img/portfolio/instabump.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <p class="card-text project-card-text pt-3">
+                  Reverse engineered a full-stack social media app utilizing MEN
+                  stack.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="container-fluid social-buttons-div">
+                  <a
+                    href="https://github.com/selaguardia/Instabump"
+                    target="_blank"
+                    class="btn socialBtn card-link"
+                    type="button"
+                  >
+                    GitHub <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </div>
-
       </div>
     </section>
 
@@ -865,7 +532,7 @@
             <h3 class="resume-title">Work Experience</h3>
             <div class="resume-item">
               <h4>Uber Driver</h4>
-              <h5>May 2013 - Mar 2020</h5>
+              <h5>May 2013 - Current</h5>
               <p><em>Uber | San Francisco, CA </em></p>
               <ul>
                 <li>Achieved Top Driver status by having a 4.96 rating while completing 6,600+ rides in a fast-paced environment</li>

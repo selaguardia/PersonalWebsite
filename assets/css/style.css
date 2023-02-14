@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #da0c0c;
+  background: #140404;
   overflow-y: auto;
 }
 #header .profile img {
@@ -521,11 +521,12 @@ section {
 }
 .card-title {
   font-size: 1.4rem;
-  color: #7ad7f4;
+  color: #b3e8f8;
   font-weight: 700!important;
 }
 .project-card-text {
-  color: #7dbedc;
+  color: #b3e8f8;
+
 }
 
 .tech-button-div {
@@ -552,11 +553,13 @@ section {
 }
 
 .socialBtn{
-  color: #7dbedc;
+  color: #b3e8f8;
+
 }
 .socialBtn:hover {
-  color: #37b3ed;
-  font-size: 1.2rem;
+  background-color: #b3e8f8;
+  color: black;
+  font-size: 1.1rem;
 }
 
 .card-img-top {
